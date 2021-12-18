@@ -5,22 +5,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ascension"
-        android:layout_marginTop="300dp"
+        android:textSize="58dp"
+        android:textAlignment="center"
+        android:layout_marginTop="250dp"
+        android:textColor="#fff"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create New Character" />
+        android:layout_gravity="center"
+        android:text="Create New Character"
+        android:onClick="createCharScreen"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Load Character"/>
+        android:layout_gravity="center"
+        android:text="Load Character"
+        android:onClick="loadCharScreen"/>
 
 </LinearLayout>
