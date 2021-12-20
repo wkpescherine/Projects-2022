@@ -1,6 +1,8 @@
 package com.example.ascension;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -38,8 +40,13 @@ public class CreateCharacter extends AppCompatActivity {
         classText.setText(selectClass);
     }
 
-    public void backToMain(View v){ }
+    public void backToMain(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
-    public void loadSkills(View v){ }
-
+    public void loadSkills(View v){
+        Intent intent = new Intent(this, SkillScreen.class);
+        startActivity(intent);
+    }
 }
