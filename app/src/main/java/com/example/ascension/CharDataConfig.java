@@ -1,7 +1,8 @@
 package com.example.ascension;
 
 public class CharDataConfig {
-    String charStyle = "";
-    String charRace = "";
-    String charClass = "";
+    static String charStyle = "";
+    static String charRace = "";
+    static String charClass = "";
+    static String charName = "";
 }
