@@ -32,6 +32,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView raceText = findViewById(R.id.charRaceHolder);
         charSheet.updateRace(selectRace);
         raceText.setText(selectRace);
+        setStats();
     }
 
     public void handleClass(View v){
@@ -40,6 +41,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView classText = findViewById(R.id.charClassHolder);
         charSheet.updateClass(selectClass);
         classText.setText(selectClass);
+        setStats();
     }
 
     public void backToMain(View v){
