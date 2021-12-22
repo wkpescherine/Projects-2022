@@ -6,11 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateCharacter"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#000">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:hint="Character name"/>
 
     <LinearLayout
@@ -22,12 +24,14 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:text="Style"/>
         <TextView
             android:id="@+id/charRaceHolder"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:text="Race"/>
         <TextView
             android:id="@+id/charClassHolder"
@@ -48,16 +52,22 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Savage"
+                android:textColor="#fff"
+                android:textSize="32dp"
                 android:onClick="handleStyle"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Diabolic"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleStyle"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Dovone"
+                android:text="Devine"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleStyle"/>
         </TableRow>
         <TableRow
@@ -68,16 +78,22 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Human"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleRace"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Elven"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleRace"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Dwarven"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleRace"/>
         </TableRow>
         <TableRow
@@ -88,16 +104,22 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Warrior"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleClass"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Mage"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleClass"/>
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Thief"
+                android:textSize="32dp"
+                android:textColor="#fff"
                 android:onClick="handleClass"/>
         </TableRow>
     </TableLayout>
