@@ -13,7 +13,7 @@
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:textAlignment="center"
         android:textColor="#fff"
         android:hint="Character name"/>
 
@@ -25,21 +25,21 @@
             android:id="@+id/charStyleHolder"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:textAlignment="center"
             android:textColor="#fff"
             android:text="Style"/>
         <TextView
             android:id="@+id/charRaceHolder"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:textAlignment="center"
             android:textColor="#fff"
             android:text="Race"/>
         <TextView
             android:id="@+id/charClassHolder"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:textAlignment="center"
             android:textColor="#fff"
             android:text="Class"/>
     </LinearLayout>
