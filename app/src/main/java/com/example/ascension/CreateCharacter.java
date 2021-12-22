@@ -59,6 +59,6 @@ public class CreateCharacter extends AppCompatActivity {
 
     public void setStats(){
         TextView strText = findViewById(R.id.str);
-        strText.setText("STR: " + charSheet.styleStats[0]);
+        strText.setText("STR: " + (charSheet.styleStats[0]+charSheet.raceStats[0]+charSheet.classStats[0]));
     }
 }
