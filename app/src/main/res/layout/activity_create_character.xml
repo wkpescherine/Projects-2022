@@ -135,6 +135,24 @@
                 android:onClick="handleClass"/>
         </TableRow>
     </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/row2_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:id="@+id/str"
+                android:textColor="#fff"
+                android:text="Str">
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

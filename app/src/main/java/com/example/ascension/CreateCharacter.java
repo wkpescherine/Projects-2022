@@ -23,6 +23,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView styleText = findViewById(R.id.charStyleHolder);
         charSheet.updateStyle(selectStyle);
         styleText.setText(selectStyle);
+        setStats();
     }
 
     public void handleRace(View v){
@@ -54,5 +55,10 @@ public class CreateCharacter extends AppCompatActivity {
             Intent intent2 = new Intent(this, SkillScreen.class);
             startActivity(intent2);
         }
+    }
+
+    public void setStats(){
+        TextView strText = findViewById(R.id.str);
+        strText.setText("STR: " + charSheet.styleStats[0]);
     }
 }
