@@ -20,7 +20,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t1 = (TextView) v;
         String selectStyle = t1.getText().toString();
         TextView styleText = findViewById(R.id.charStyleHolder);
-        charSheet.charStyle = selectStyle;
+        charSheet.updateStyle(selectStyle);
         styleText.setText(selectStyle);
     }
 
@@ -28,7 +28,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t2 = (TextView) v;
         String selectRace = t2.getText().toString();
         TextView raceText = findViewById(R.id.charRaceHolder);
-        charSheet.charRace = selectRace;
+        charSheet.updateRace(selectRace);
         raceText.setText(selectRace);
     }
 
@@ -36,17 +36,17 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t3 = (TextView) v;
         String selectClass = t3.getText().toString();
         TextView classText = findViewById(R.id.charClassHolder);
-        charSheet.charClass = selectClass;
+        charSheet.updateClass(selectClass);
         classText.setText(selectClass);
     }
 
     public void backToMain(View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent intent1 = new Intent(this, MainActivity.class);
+        startActivity(intent1);
     }
 
     public void loadSkills(View v){
-        Intent intent = new Intent(this, SkillScreen.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, SkillScreen.class);
+        startActivity(intent2);
     }
 }
