@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.EditText;
 
 public class CreateCharacter extends AppCompatActivity {
     CharDataConfig charSheet = new CharDataConfig();
@@ -41,12 +42,17 @@ public class CreateCharacter extends AppCompatActivity {
     }
 
     public void backToMain(View v){
+        charSheet.resetUI();
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
 
     public void loadSkills(View v){
-        Intent intent2 = new Intent(this, SkillScreen.class);
-        startActivity(intent2);
+        EditText nameChar = findViewById(R.id.editName);
+        charSheet.charName = nameChar+"";
+        if(charSheet.charName.length() != 0 && charSheet.charStyle.length() != 0 && charSheet.charRace.length() != 0 && charSheet.charClass.length() != 0){
+            Intent intent2 = new Intent(this, SkillScreen.class);
+            startActivity(intent2);
+        }
     }
 }
