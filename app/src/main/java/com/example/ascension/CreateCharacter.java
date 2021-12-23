@@ -61,6 +61,16 @@ public class CreateCharacter extends AppCompatActivity {
 
     public void setStats(){
         TextView strText = findViewById(R.id.str);
-        strText.setText("STR: " + (charSheet.styleStats[0]+charSheet.raceStats[0]+charSheet.classStats[0]));
+        TextView dexText = findViewById(R.id.dex);
+        TextView conText = findViewById(R.id.con);
+        TextView intText = findViewById(R.id.intel);
+        TextView pieText = findViewById(R.id.pie);
+        TextView quiText = findViewById(R.id.qui);
+        strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
+        dexText.setText("STR: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
+        conText.setText("STR: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
+        intText.setText("STR: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
+        pieText.setText("STR: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
+        quiText.setText("STR: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
     }
 }
