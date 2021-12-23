@@ -66,11 +66,12 @@ public class CreateCharacter extends AppCompatActivity {
         TextView intText = findViewById(R.id.intel);
         TextView pieText = findViewById(R.id.pie);
         TextView quiText = findViewById(R.id.qui);
+        //stats array def -str int, pie, qui, dex, con
         strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
-        dexText.setText("DEX: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
-        conText.setText("CON: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
-        intText.setText("INT: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
-        pieText.setText("PIE: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
-        quiText.setText("QUI: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
+        intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
+        pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
+        dexText.setText("DEX: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
+        quiText.setText("QUI: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
+        conText.setText("CON: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
     }
 }
