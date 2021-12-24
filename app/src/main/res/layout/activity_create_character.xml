@@ -64,7 +64,7 @@
             android:textColor="#fff"/>
 
         <TableRow
-            android:id="@+id/row1.1"
+            android:id="@+id/row1_1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -93,7 +93,7 @@
                 android:onClick="handleStyle"/>
         </TableRow>
         <TableRow
-            android:id="@+id/row1.2"
+            android:id="@+id/row1_2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -134,7 +134,7 @@
             android:textColor="#fff"/>
 
         <TableRow
-            android:id="@+id/row2.1"
+            android:id="@+id/row2_1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -163,7 +163,7 @@
                 android:onClick="handleRace"/>
         </TableRow>
         <TableRow
-            android:id="@+id/row2.2"
+            android:id="@+id/row2_2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -204,7 +204,7 @@
             android:textColor="#fff"/>
 
         <TableRow
-            android:id="@+id/row3.1"
+            android:id="@+id/row3_1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -233,7 +233,7 @@
                 android:onClick="handleClass"/>
         </TableRow>
         <TableRow
-            android:id="@+id/row3.2"
+            android:id="@+id/row3_2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -272,7 +272,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TableRow
-            android:id="@+id/row2_1"
+            android:id="@+id/row4_1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -305,7 +305,7 @@
             </TextView>
         </TableRow>
         <TableRow
-            android:id="@+id/row2_2"
+            android:id="@+id/row4_2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -335,6 +335,39 @@
                 android:id="@+id/pow"
                 android:textColor="#fff"
                 android:text="POW: 0">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:id="@+id/toHit"
+                android:textColor="#fff"
+                android:text="toHit: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:id="@+id/dodge"
+                android:textColor="#fff"
+                android:text="Dodge: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:id="@+id/armor"
+                android:textColor="#fff"
+                android:text="AF: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:id="@+id/speed"
+                android:textColor="#fff"
+                android:text="SPD: 0">
             </TextView>
         </TableRow>
 
