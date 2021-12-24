@@ -56,8 +56,15 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Style"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
         <TableRow
-            android:id="@+id/row1"
+            android:id="@+id/row1.1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -85,12 +92,49 @@
                 android:textColor="#fff"
                 android:onClick="handleStyle"/>
         </TableRow>
+        <TableRow
+            android:id="@+id/row1.2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Stout"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:onClick="handleStyle"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Demonic"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleStyle"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pure"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleStyle"/>
+        </TableRow>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Race"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
         <TableRow
-            android:id="@+id/row2"
+            android:id="@+id/row2.1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -118,12 +162,49 @@
                 android:textColor="#fff"
                 android:onClick="handleRace"/>
         </TableRow>
+        <TableRow
+            android:id="@+id/row2.2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Undead"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Goblin"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ogre"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+        </TableRow>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Class"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
         <TableRow
-            android:id="@+id/row3"
+            android:id="@+id/row3.1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
             <TextView
@@ -147,6 +228,35 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Thief"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row3.2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Berzerker"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Priest"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ranger"
                 android:textSize="16dp"
                 android:textColor="#fff"
                 android:onClick="handleClass"/>
