@@ -27,8 +27,11 @@ public class CharDataConfig {
     int classBerzerker [] = {4,0,0,1,1,0};
     int classPriest [] = {0,0,3,1,1,1};
     int classRanger [] = {2,0,0,2,2,0};
+    //stats array def -str int, pie, qui, dex, con
     static int charStats [] = {0,0,0,0,0,0};
     static int charBonus [] = {0,0,0,0,0,0};
+    // stats array def - toHit, Dodge, AF, SPD
+    static int combatStats [] = {0,0,0,0};
 
     public void updateStyle( String choice){
         charStyle = choice;
@@ -122,9 +125,16 @@ public class CharDataConfig {
             for(int b = 0; b < charStats[a]; b++){
                 if(b+bonusValue <= charStats[a] ){
                     bonusValue = b;
-                } else { b = 100000}
+                } else { b = 100000;}
             }
             charBonus[a] = bonusValue;
         }
+        setCombatStats();
+    }
+
+    public void setCombatStats(){
+        combatStats[0] = charBonus[4]+10;
+        combatStats[1] = charBonus[4]+charBonus[3];
+        combatStats[3] = charBonus[3];
     }
 }
