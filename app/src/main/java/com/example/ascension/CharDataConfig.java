@@ -122,7 +122,7 @@ public class CharDataConfig {
             for(int b = 0; b < charStats[a]; b++){
                 if(b+bonusValue <= charStats[a] ){
                     bonusValue = b;
-                }
+                } else { b = 100000}
             }
             charBonus[a] = bonusValue;
         }
