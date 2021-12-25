@@ -31,7 +31,9 @@ public class SkillScreen extends AppCompatActivity {
         TextView dodgeText = findViewById(R.id.dodge);
         TextView afText = findViewById(R.id.armor);
         TextView spdText = findViewById(R.id.speed);
+        TextView nameText = findViewById(R.id.nameChar);
         //stats array def -str int, pie, qui, dex, con
+        nameText.setText(charSheet.charName);
         strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
         intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
         pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);

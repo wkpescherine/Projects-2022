@@ -9,6 +9,14 @@
     android:orientation="vertical"
     android:background="#000">
 
+    <TextView
+        android:id="@+id/nameChar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
