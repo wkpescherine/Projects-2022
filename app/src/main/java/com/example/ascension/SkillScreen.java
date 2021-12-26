@@ -2,7 +2,9 @@ package com.example.ascension;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
@@ -45,5 +47,12 @@ public class SkillScreen extends AppCompatActivity {
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
         spdText.setText("SPD: "+ charSheet.combatStats[3]);
+    }
+
+    public void startGame(){}
+
+    public void backToChar(View v){
+        Intent intent1 = new Intent(this, CreateCharacter.class);
+        startActivity(intent1);
     }
 }
