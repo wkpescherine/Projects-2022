@@ -56,7 +56,7 @@ public class CreateCharacter extends AppCompatActivity {
 
     public void loadSkills(View v){
         EditText nameChar = findViewById(R.id.editName);
-        charSheet.charName = nameChar+"";
+        charSheet.charName = nameChar.getText().toString();
         if(charSheet.charName.length() != 0 && charSheet.charStyle.length() != 0 && charSheet.charRace.length() != 0 && charSheet.charClass.length() != 0){
             Intent intent2 = new Intent(this, SkillScreen.class);
             startActivity(intent2);
