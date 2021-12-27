@@ -133,29 +133,54 @@
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="179dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <Button
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/sweeo"
-                android:text="Sweep"/>
+                android:id="@+id/sweepU1"
+                android:text="Sweep I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sparkU1"
+                android:text="Spark I"
+                android:onClick="skillPicker"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="2dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#fff">
         </LinearLayout>
         <LinearLayout
             android:layout_width="179dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <Button
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/sweeo"
-                android:text="Sweep"/>
+                android:id="@+id/sweepA1"
+                android:text="Sweep I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sparkA1"
+                android:text="Spark I"
+                android:onClick="skillPicker"/>
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
 
     <Button
         android:layout_width="match_parent"

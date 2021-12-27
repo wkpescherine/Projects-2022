@@ -5,6 +5,7 @@ public class CharDataConfig {
     static String charRace = "";
     static String charClass = "";
     static String charName = "";
+    static int charSkills[] = {0,0};
     //stats array def -str int, pie, qui, dex, con
     int styleStats[] = {0,0,0,0,0,0};
     int raceStats[] = {0,0,0,0,0,0};

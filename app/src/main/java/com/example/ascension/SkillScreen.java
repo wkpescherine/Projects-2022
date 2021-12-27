@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class SkillScreen extends AppCompatActivity {
     CharDataConfig charSheet = new CharDataConfig();
+    SkillHandler skills = new SkillHandler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,12 @@ public class SkillScreen extends AppCompatActivity {
         getSupportActionBar().hide();
 
         setStats();
+    }
+
+    public void skillPicker(View v){
+        TextView t2 = (TextView) v;
+        String skillSelected = t2.getText().toString();
+        skills.SkillList(skillSelected);
     }
 
     public void setStats(){
