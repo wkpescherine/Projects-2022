@@ -27,6 +27,29 @@ public class SkillScreen extends AppCompatActivity {
         TextView t2 = (TextView) v;
         String skillSelected = t2.getText().toString();
         skills.SkillList(skillSelected);
+        displaySkills();
+    }
+
+    public void displaySkills(){
+        TextView skill001 = findViewById(R.id.sweepA1);
+        TextView skill002 = findViewById(R.id.sweepU1);
+        TextView skill003 = findViewById(R.id.sparkA1);
+        TextView skill004 = findViewById(R.id.sparkU1);
+        if(charSheet.charSkills[0] == 0 && charSheet.charStats[0] >= 5) {
+            skill001.setVisibility(View.VISIBLE);
+            skill002.setVisibility(View.GONE);
+        } else {
+            skill001.setVisibility(View.GONE);
+            skill002.setVisibility(View.VISIBLE);
+        }
+        if(charSheet.charSkills[1] == 0 && charSheet.charStats[3] >= 5) {
+            skill003.setVisibility(View.VISIBLE);
+            skill004.setVisibility(View.GONE);
+        } else {
+            skill003.setVisibility(View.GONE);
+            skill004.setVisibility(View.VISIBLE);
+        }
+
     }
 
     public void setStats(){
