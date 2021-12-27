@@ -30,25 +30,26 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void displaySkills(){
-        TextView skill001 = findViewById(R.id.sweepA1);
-        TextView skill002 = findViewById(R.id.sweepU1);
-        TextView skill003 = findViewById(R.id.sparkA1);
-        TextView skill004 = findViewById(R.id.sparkU1);
+        TextView skill001 = findViewById(R.id.sweepU1);
+        TextView skill002 = findViewById(R.id.sweepA1);
+        TextView skill003 = findViewById(R.id.sparkU1);
+        TextView skill004 = findViewById(R.id.sparkA1);
         if(charSheet.charSkills[0] == 0 && charSheet.charStats[0] >= 5) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
-        } else {
+        }
+        if(charSheet.charSkills[0] == 1){
             skill001.setVisibility(View.GONE);
             skill002.setVisibility(View.VISIBLE);
         }
-        if(charSheet.charSkills[1] == 0 && charSheet.charStats[3] >= 5) {
+        if(charSheet.charSkills[1] == 0 && charSheet.charStats[1] >= 5) {
             skill003.setVisibility(View.VISIBLE);
             skill004.setVisibility(View.GONE);
-        } else {
+        }
+        if (charSheet.charSkills[1] == 1){
             skill003.setVisibility(View.GONE);
             skill004.setVisibility(View.VISIBLE);
         }
-
     }
 
     public void setStats(){
@@ -76,6 +77,7 @@ public class SkillScreen extends AppCompatActivity {
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
         spdText.setText("SPD: "+ charSheet.combatStats[3]);
+        displaySkills();
     }
 
     public void startGame(){}

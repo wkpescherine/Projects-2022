@@ -5,10 +5,10 @@ public class SkillHandler {
 
     public void SkillList(String skill){
         switch(skill) {
-            case "sweepA1":
+            case "sweepU1":
                 charSheet.charSkills[0] = 1;
                 break;
-            case "sweepU1":
+            case "sweepA1":
                 charSheet.charSkills[0] = 0;
                 break;
             case "sparkU1":
