@@ -80,7 +80,10 @@ public class SkillScreen extends AppCompatActivity {
         displaySkills();
     }
 
-    public void startGame(){}
+    public void startGame(View v){
+        Intent intent2 = new Intent(this, TownScreen.class);
+        startActivity(intent2);
+    }
 
     public void backToChar(View v){
         Intent intent1 = new Intent(this, CreateCharacter.class);
