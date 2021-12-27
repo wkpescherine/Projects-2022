@@ -24,8 +24,7 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void skillPicker(View v){
-        TextView t2 = (TextView) v;
-        String skillSelected = t2.getText().toString();
+        String skillSelected = getResources().getResourceEntryName(v.getId());
         skills.SkillList(skillSelected);
         displaySkills();
     }
