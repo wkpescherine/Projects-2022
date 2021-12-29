@@ -121,6 +121,36 @@
                 android:textColor="#fff"
                 android:onClick="handleStyle"/>
         </TableRow>
+        <TableRow
+            android:id="@+id/row1_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Agile"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:onClick="handleStyle"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Psionic"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleStyle"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fallen"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleStyle"/>
+        </TableRow>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="2dp"
@@ -191,6 +221,35 @@
                 android:textColor="#fff"
                 android:onClick="handleRace"/>
         </TableRow>
+        <TableRow
+            android:id="@+id/row2_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Atlantean"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Draconic"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Spirit"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleRace"/>
+        </TableRow>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="2dp"
@@ -257,6 +316,35 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Ranger"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row3_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Juggernaut"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="mindweaver"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:onClick="handleClass"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Shadow"
                 android:textSize="16dp"
                 android:textColor="#fff"
                 android:onClick="handleClass"/>

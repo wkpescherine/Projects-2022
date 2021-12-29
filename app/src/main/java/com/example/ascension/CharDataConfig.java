@@ -5,29 +5,42 @@ public class CharDataConfig {
     static String charRace = "";
     static String charClass = "";
     static String charName = "";
+    static int skillPoints = 0;
     static int charSkills[] = {0,0};
     //stats array def -str int, pie, qui, dex, con
     int styleStats[] = {0,0,0,0,0,0};
     int raceStats[] = {0,0,0,0,0,0};
     int classStats[] = {0,0,0,0,0,0};
+    //tyle
     int styleSavage [] = {3,0,0,2,0,1};
     int styleDiabolic [] = {0,3,0,1,1,1};
     int styleDivine [] = {0,0,3,1,1,1};
     int styleStout [] = {0,0,1,1,1,4};
     int styleDemonic [] = {0,2,0,1,1,2};
     int stylePure [] = {0,0,4,0,0,2};
+    int styleAgile [] = {0,0,0,3,3,0};
+    int stylePsionic [] = {0,6,0,0,0,0};
+    int styleFallen [] = {2,0,1,1,1,1};
+    //Race
     int raceHuman [] = {2,2,2,2,2,2};
     int raceElven [] = {1,3,1,3,3,1};
     int raceDwarven [] = {3,1,1,1,1,5};
     int raceUndead [] = {4,1,1,1,1,4};
     int raceGoblin [] = {1,1,1,4,4,1};
     int raceOgre [] = {6,1,1,1,1,2};
+    int raceAtlantean [] = {1,4,1,2,3,1};
+    int raceDraconic [] = {3,2,1,1,1,4};
+    int raceSpirit [] = {1,5,1,1,3,1};
+    //class
     int classWarrior [] = {2,0,0,1,0,3};
     int classMage [] = {0,2,1,0,3,0};
     int classThief [] = {1,0,0,2,2,1};
     int classBerzerker [] = {4,0,0,1,1,0};
     int classPriest [] = {0,0,3,1,1,1};
     int classRanger [] = {2,0,0,2,2,0};
+    int classJuggernaut [] = {4,0,0,1,1,0};
+    int classMindweaver [] = {0,0,3,1,1,1};
+    int classShadow [] = {2,0,0,2,2,0};
     //stats array def -str int, pie, qui, dex, con
     static int charStats [] = {0,0,0,0,0,0};
     static int charBonus [] = {0,0,0,0,0,0};
@@ -54,6 +67,15 @@ public class CharDataConfig {
         if(charStyle.equals("Pure")){
             styleStats = stylePure;
         }
+        if(charStyle.equals("Agile")){
+            styleStats = styleAgile;
+        }
+        if(charStyle.equals("Psionic")){
+            styleStats = stylePsionic;
+        }
+        if(charStyle.equals("Fallen")){
+            styleStats = styleFallen;
+        }
         statsTotal();
     }
 
@@ -77,6 +99,15 @@ public class CharDataConfig {
         if(charRace.equals("Ogre")){
             raceStats = raceOgre;
         }
+        if(charRace.equals("Atlantean")){
+            raceStats = raceAtlantean;
+        }
+        if(charRace.equals("Draconic")){
+            raceStats = raceDraconic;
+        }
+        if(charRace.equals("Spirit")){
+            raceStats = raceSpirit;
+        }
         statsTotal();
     }
 
@@ -99,6 +130,15 @@ public class CharDataConfig {
         }
         if(charClass.equals("Ranger")){
             classStats = classRanger;
+        }
+        if(charClass.equals("Juggernaut")){
+            classStats = classJuggernaut;
+        }
+        if(charClass.equals("Mindweaver")){
+            classStats = classMindweaver;
+        }
+        if(charClass.equals("Shadow")){
+            classStats = classShadow;
         }
         statsTotal();
     }
