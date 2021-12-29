@@ -64,8 +64,11 @@ public class SkillScreen extends AppCompatActivity {
         TextView afText = findViewById(R.id.armor);
         TextView spdText = findViewById(R.id.speed);
         TextView nameText = findViewById(R.id.nameChar);
+        TextView proText = findViewById(R.id.profession);
+        TextView skillText = findViewById(R.id.skillpts);
         //stats array def -str int, pie, qui, dex, con
         nameText.setText(charSheet.charName);
+        proText.setText(charSheet.charStyle+ " "+charSheet.charRace+ " "+charSheet.charClass);
         strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
         intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
         pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
@@ -77,6 +80,8 @@ public class SkillScreen extends AppCompatActivity {
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
         spdText.setText("SPD: "+ charSheet.combatStats[3]);
+        //Skill point
+        skillText.setText("Skill Points: " + charSheet.skillPoints);
         displaySkills();
     }
 

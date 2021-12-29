@@ -17,6 +17,14 @@
         android:textAlignment="center"
         android:textColor="#fff"/>
 
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="profession"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -123,9 +131,10 @@
     </TableLayout>
 
     <TextView
+        android:id="@+id/skillpts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Skill Points: 1"
+        android:text="Skill Points"
         android:textSize="16dp"
         android:textAlignment="center"
         android:textColor="#fff"/>
