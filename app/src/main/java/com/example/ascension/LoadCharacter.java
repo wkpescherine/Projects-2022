@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.view.View;
 
 public class LoadCharacter extends AppCompatActivity {
     CharDataConfig config = new CharDataConfig();
@@ -18,13 +19,26 @@ public class LoadCharacter extends AppCompatActivity {
         setContentView(R.layout.activity_load_character);
 
         handleFile.readCharFromFile();
+
+        for(int a = 0; a< 4; a++){
+            buildCharsToLoad();
+        }
     }
 
     public void buildCharsToLoad(){
-        LinearLayout parent = findViewById(R.id.subContent);
+        LinearLayout parent = findViewById(R.id.parent);
 
-        LinearLayout savedChar = new LinearLayout();
+        LinearLayout subSection = new LinearLayout(this);
+        subSection.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+        );
+        subSection.setOrientation(LinearLayout.VERTICAL);
+        TextView tv1 = new TextView(this);
 
-        TextView tv1 = new TextView();
+        tv1.setText(" This should show something ");
+        parent.addView(tv1);
+
     }
 }

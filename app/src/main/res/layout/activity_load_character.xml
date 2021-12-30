@@ -5,12 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoadCharacter">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/subContent"
-        android:orientation="vertical"/>
-
+    tools:context=".LoadCharacter"
+    android:orientation="vertical"
+    android:id="@+id/parent">
 </LinearLayout>
