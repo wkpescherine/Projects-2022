@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class SkillScreen extends AppCompatActivity {
     CharDataConfig charSheet = new CharDataConfig();
     SkillHandler skills = new SkillHandler();
+    CharFileHandler saveChar = new CharFileHandler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +87,7 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void startGame(View v){
+        saveChar.writeCharToFile();
         Intent intent2 = new Intent(this, TownScreen.class);
         startActivity(intent2);
     }
