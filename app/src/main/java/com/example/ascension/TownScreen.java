@@ -2,6 +2,7 @@ package com.example.ascension;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -14,5 +15,14 @@ public class TownScreen extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+    }
+
+    public void clickForge(){}
+
+    public void clickHome(){}
+
+    public void clickDungeon(){
+        Intent intent = new Intent(this, Dungeon.class);
+        startActivity(intent);
     }
 }
