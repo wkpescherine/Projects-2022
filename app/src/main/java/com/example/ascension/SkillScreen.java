@@ -12,6 +12,7 @@ public class SkillScreen extends AppCompatActivity {
     CharDataConfig charSheet = new CharDataConfig();
     SkillHandler skills = new SkillHandler();
     CharFileHandler saveChar = new CharFileHandler();
+    GearBuilder gear = new GearBuilder();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
