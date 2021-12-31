@@ -51,7 +51,7 @@ public class Dungeon extends AppCompatActivity {
         ll.setLayoutParams(params);
     }
 
-    public void returnHome(){
+    public void returnHome(View v){
         Intent intent = new Intent(this, TownScreen.class);
         startActivity(intent);
     }

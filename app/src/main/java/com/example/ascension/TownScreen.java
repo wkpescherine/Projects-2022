@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class TownScreen extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class TownScreen extends AppCompatActivity {
 
     public void clickHome(){}
 
-    public void clickDungeon(){
+    public void clickDungeon(View v){
         Intent intent = new Intent(this, Dungeon.class);
         startActivity(intent);
     }
