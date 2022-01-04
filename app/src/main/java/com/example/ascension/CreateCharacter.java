@@ -74,6 +74,8 @@ public class CreateCharacter extends AppCompatActivity {
         TextView dodgeText = findViewById(R.id.dodge);
         TextView afText = findViewById(R.id.armor);
         TextView spdText = findViewById(R.id.speed);
+        TextView hpText = findViewById(R.id.hp);
+        TextView powText = findViewById(R.id.pow);
         //stats array def -str int, pie, qui, dex, con
         strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
         intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
@@ -81,6 +83,8 @@ public class CreateCharacter extends AppCompatActivity {
         dexText.setText("DEX: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
         quiText.setText("QUI: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
         conText.setText("CON: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
+        hpText.setText("HP: " + charSheet.charStats[7]);
+        powText.setText("POW: " +charSheet.charStats[9]);
         // stats array def - toHit, Dodge, AF, SPD
         toHitText.setText("toHit: "+ (charSheet.combatStats[0]+10));
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
