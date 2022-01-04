@@ -34,17 +34,9 @@ public class GearBuilder {
         gearMaterial();
         // 1 : Weapon
         if(Type.equals("Dagger")){
-            gearType = Type
+            gearType = Type;
             int daggerVales [] = {1,5,0};
             tempValues [2] = daggerVales;
-        }
-        // 2 : Chest
-        if(gearInt3 == 2){
-
-        }
-        // 3 : Leggings
-        if(gearInt3 == 3){
-
         }
     }
 }
