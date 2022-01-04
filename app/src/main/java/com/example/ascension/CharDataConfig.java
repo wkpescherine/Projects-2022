@@ -11,7 +11,7 @@ public class CharDataConfig {
     int styleStats[] = {0,0,0,0,0,0,0,0,0};
     int raceStats[] = {0,0,0,0,0,0,0,0,0};
     int classStats[] = {0,0,0,0,0,0,0,0,0};
-    //tyle
+    //Styles
     int styleSavage [] = {3,0,0,2,0,1,0,0,0};
     int styleDiabolic [] = {0,3,0,1,1,1,0,0,0};
     int styleDivine [] = {0,0,3,1,1,1,0,0,0};
@@ -41,11 +41,14 @@ public class CharDataConfig {
     int classJuggernaut [] = {4,0,0,1,1,0,1,24,0};
     int classMindweaver [] = {0,0,3,1,1,1,1,12,15};
     int classShadow [] = {2,0,0,2,2,0,1,10,10};
-    //stats array def -str int, pie, qui, dex, con
+    //stats array def -str int, pie, qui, dex, con, lvl,hp,pow
     static int charStats [] = {0,0,0,0,0,0,0,0,0};
+    //stats array def -str int, pie, qui, dex, con
     static int charBonus [] = {0,0,0,0,0,0};
     // stats array def - toHit, Dodge, AF, SPD
     static int combatStats [] = {0,0,0,0};
+    //Main, Off, helm, chest, legs, boots, shoulders, arms, gloves, back
+    static String gearWorn [] = {"None","None","None","None","None","None","None","None","None","None"};
 
     public void updateStyle( String choice){
         charStyle = choice;
