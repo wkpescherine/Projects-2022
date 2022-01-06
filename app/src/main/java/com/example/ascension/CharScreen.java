@@ -29,14 +29,18 @@ public class CharScreen extends AppCompatActivity {
         TextView dexText = findViewById(R.id.dexterity);
         TextView quiText = findViewById(R.id.quickness);
         TextView conText = findViewById(R.id.constitution);
+        TextView hpText = findViewById(R.id.hp);
+        TextView powText = findViewById(R.id.power);
         //The following are the setting of the text
         nameText.setText(chSheet.name);
         profText.setText("Lvl "+chSheet.level+" "+chSheet.profession);
         strText.setText("STR: " +chSheet.strength+" + ");
         intText.setText("INT: " +chSheet.intelligence+" + ");
         pieText.setText("PIE: " +chSheet.piety+" + ");
-        dexText.setText("PIE: " +chSheet.dexterity+" + ");
-        quiText.setText("PIE: " +chSheet.quickness+" + ");
-        conText.setText("PIE: " +chSheet.constitution+" + ");
+        dexText.setText("DEX: " +chSheet.dexterity+" + ");
+        quiText.setText("QUI: " +chSheet.quickness+" + ");
+        conText.setText("CON: " +chSheet.constitution+" + ");
+        hpText.setText("HP: " +chSheet.constitution+" + ");
+        powText.setText("POW: " +chSheet.constitution+" + ");
     }
 }
