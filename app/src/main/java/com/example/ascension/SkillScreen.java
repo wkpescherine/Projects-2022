@@ -71,7 +71,7 @@ public class SkillScreen extends AppCompatActivity {
         TextView skillText = findViewById(R.id.skillpts);
         //stats array def -str int, pie, qui, dex, con
         nameText.setText(config.charName);
-        proText.setText("LVL "+config.charStats[6]+" "+config.charStyle+ " "+charSheet.charRace+ " "+charSheet.charClass);
+        proText.setText("LVL "+config.charStats[6]+" "+config.charStyle+ " "+config.charRace+ " "+config.charClass);
         strText.setText("STR: " + config.charStats[0] +" + "+ config.charBonus[0]);
         intText.setText("INT: " + config.charStats[1] +" + "+ config.charBonus[1]);
         pieText.setText("PIE: " + config.charStats[2] +" + "+ config.charBonus[2]);
