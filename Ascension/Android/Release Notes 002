@@ -4,6 +4,9 @@
 **                                                                             **
 *********************************************************************************
 2.2.4 Updated Char Screen to start displaying data from creation
+      Updated Char Screen data transfer, storage and displaying
+      Updated Char Screen UI
+      Fixed bugs and graphical display issues
 2.2.3 Updated ConfigFile to handle more stats
       Updated Gear Builder to be more intuitive
       Version Update to Live devices
