@@ -22,6 +22,14 @@ public class CharScreen extends AppCompatActivity {
 
     public void buildCharSheet(){
         TextView nameText = findViewById(R.id.name);
+        TextView profText = findViewById(R.id.profession);
+        TextView strText = findViewById(R.id.strength);
+        TextView intText = findViewById(R.id.intelligence);
+        TextView pieText = findViewById(R.id.piety);
         nameText.setText(chSheet.name);
+        profText.setText("Lvl "+chSheet.level+" "+chSheet.profession);
+        strText.setText("STR: " +chSheet.strength);
+        intText.setText("STR: " +chSheet.intelligence);
+        pieText.setText("STR: " +chSheet.piety);
     }
 }

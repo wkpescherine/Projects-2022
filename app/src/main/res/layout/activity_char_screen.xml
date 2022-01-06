@@ -21,14 +21,28 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text=""
-        android:id="@+id/level"
+        android:id="@+id/profession"
         android:textColor="#fff"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text=""
-        android:id="@+id/profession"
+        android:id="@+id/strength"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/intelligence"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/piety"
         android:textColor="#fff"/>
 
     <Button
