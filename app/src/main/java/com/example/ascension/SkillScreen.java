@@ -9,10 +9,11 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 public class SkillScreen extends AppCompatActivity {
-    CharDataConfig charSheet = new CharDataConfig();
+    CharDataConfig config = new CharDataConfig();
     SkillHandler skills = new SkillHandler();
     CharFileHandler saveChar = new CharFileHandler();
     GearBuilder gear = new GearBuilder();
+    CharSheet charSheet = new CharSheet();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,19 +37,19 @@ public class SkillScreen extends AppCompatActivity {
         TextView skill002 = findViewById(R.id.sweepA1);
         TextView skill003 = findViewById(R.id.sparkU1);
         TextView skill004 = findViewById(R.id.sparkA1);
-        if(charSheet.charSkills[0] == 0 && charSheet.charStats[0] >= 5) {
+        if(config.charSkills[0] == 0 && config.charStats[0] >= 5) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
         }
-        if(charSheet.charSkills[0] == 1){
+        if(config.charSkills[0] == 1){
             skill001.setVisibility(View.GONE);
             skill002.setVisibility(View.VISIBLE);
         }
-        if(charSheet.charSkills[1] == 0 && charSheet.charStats[1] >= 5) {
+        if(config.charSkills[1] == 0 && config.charStats[1] >= 5) {
             skill003.setVisibility(View.VISIBLE);
             skill004.setVisibility(View.GONE);
         }
-        if (charSheet.charSkills[1] == 1){
+        if (config.charSkills[1] == 1){
             skill003.setVisibility(View.GONE);
             skill004.setVisibility(View.VISIBLE);
         }
@@ -69,25 +70,26 @@ public class SkillScreen extends AppCompatActivity {
         TextView proText = findViewById(R.id.profession);
         TextView skillText = findViewById(R.id.skillpts);
         //stats array def -str int, pie, qui, dex, con
-        nameText.setText(charSheet.charName);
-        proText.setText("LVL "+charSheet.charStats[6]+" "+charSheet.charStyle+ " "+charSheet.charRace+ " "+charSheet.charClass);
-        strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
-        intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
-        pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
-        dexText.setText("DEX: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
-        quiText.setText("QUI: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
-        conText.setText("CON: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
+        nameText.setText(config.charName);
+        proText.setText("LVL "+config.charStats[6]+" "+config.charStyle+ " "+charSheet.charRace+ " "+charSheet.charClass);
+        strText.setText("STR: " + config.charStats[0] +" + "+ config.charBonus[0]);
+        intText.setText("INT: " + config.charStats[1] +" + "+ config.charBonus[1]);
+        pieText.setText("PIE: " + config.charStats[2] +" + "+ config.charBonus[2]);
+        dexText.setText("DEX: " + config.charStats[3] +" + "+ config.charBonus[3]);
+        quiText.setText("QUI: " + config.charStats[4] +" + "+ config.charBonus[4]);
+        conText.setText("CON: " + config.charStats[5] +" + "+ config.charBonus[5]);
         // stats array def - toHit, Dodge, AF, SPD
-        toHitText.setText("toHit: "+ (charSheet.combatStats[0]+10));
-        dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
+        toHitText.setText("toHit: "+ (config.combatStats[0]+10));
+        dodgeText.setText("Dodge: "+ config.combatStats[1]);
         afText.setText("AF: 0");
-        spdText.setText("SPD: "+ charSheet.combatStats[3]);
+        spdText.setText("SPD: "+ config.combatStats[3]);
         //Skill point
-        skillText.setText("Skill Points: " + charSheet.skillPoints);
+        skillText.setText("Skill Points: " + config.skillPoints);
         displaySkills();
     }
 
     public void startGame(View v){
+        charSheet.buildCharSheet();
         saveChar.writeCharToFile();
         Intent intent2 = new Intent(this, TownScreen.class);
         startActivity(intent2);
