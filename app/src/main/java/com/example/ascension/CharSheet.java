@@ -40,7 +40,7 @@ public class CharSheet {
         constitution = config.charStats[5];
         hp = config.charStats[7];
         power = config.charStats[8];
-        AF = config.charStats[9];
+        AF = config.combatStats[2];
     }
 
     public int updateCharBonus(int stat){
