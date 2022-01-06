@@ -6,7 +6,7 @@ public class CharSheet {
     CharDataConfig config = new CharDataConfig();
 
     static String name = "";
-    static int level = 0;
+    static int level = 1;
     static String profession = "";
     static int strength = 0;
     static int intelligence = 0;
@@ -17,7 +17,12 @@ public class CharSheet {
 
     public void buildCharSheet(){
         name = config.charName;
-        level = config.charStats[6];
         profession = config.charStyle+" "+ config.charRace +" "+ config.charClass;
+        strength = config.charStats[0];
+        intelligence = config.charStats[1];
+        piety = config.charStats[2];
+        dexterity = config.charStats[3];
+        quickness = config.charStats[4];
+        constitution = config.charStats[5];
     }
 }
