@@ -26,4 +26,9 @@ public class TownScreen extends AppCompatActivity {
         Intent intent = new Intent(this, Dungeon.class);
         startActivity(intent);
     }
+
+    public void clickCharSheet(View v){
+        Intent intent = new Intent(this, CharScreen.class);
+        startActivity(intent);
+    }
 }
