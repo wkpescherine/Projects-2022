@@ -34,13 +34,13 @@ public class CharScreen extends AppCompatActivity {
         //The following are the setting of the text
         nameText.setText(chSheet.name);
         profText.setText("Lvl "+chSheet.level+" "+chSheet.profession);
-        strText.setText("STR: " +chSheet.strength+" + ");
-        intText.setText("INT: " +chSheet.intelligence+" + ");
-        pieText.setText("PIE: " +chSheet.piety+" + ");
-        dexText.setText("DEX: " +chSheet.dexterity+" + ");
-        quiText.setText("QUI: " +chSheet.quickness+" + ");
-        conText.setText("CON: " +chSheet.constitution+" + ");
-        hpText.setText("HP: " +chSheet.constitution+" + ");
-        powText.setText("POW: " +chSheet.constitution+" + ");
+        strText.setText("STR: " +chSheet.strength);
+        intText.setText("INT: " +chSheet.intelligence);
+        pieText.setText("PIE: " +chSheet.piety);
+        dexText.setText("DEX: " +chSheet.dexterity);
+        quiText.setText("QUI: " +chSheet.quickness);
+        conText.setText("CON: " +chSheet.constitution);
+        hpText.setText("HP: " +chSheet.hp);
+        powText.setText("POW: " +chSheet.power);
     }
 }
