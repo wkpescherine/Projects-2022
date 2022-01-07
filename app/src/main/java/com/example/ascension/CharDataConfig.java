@@ -7,46 +7,46 @@ public class CharDataConfig {
     static String charName = "";
     static int skillPoints = 0;
     static int charSkills[] = {0,0};
-    //stats array def -str int, pie, qui, dex, con, lvl, hp ,pow
-    int styleStats[] = {0,0,0,0,0,0,0,0,0};
-    int raceStats[] = {0,0,0,0,0,0,0,0,0};
-    int classStats[] = {0,0,0,0,0,0,0,0,0};
+    //stats array def -str int, pie, psi, qui, dex, con, sta, lvl, hp ,pow
+    int styleStats[] = {0,0,0,0,0,0,0,0,0,0,0};
+    int raceStats[] = {0,0,0,0,0,0,0,0,0,0,0};
+    int classStats[] = {0,0,0,0,0,0,0,0,0,0,0};
     //Styles
-    int styleSavage [] = {3,0,0,2,0,1,0,0,0};
-    int styleDiabolic [] = {0,3,0,1,1,1,0,0,0};
-    int styleDivine [] = {0,0,3,1,1,1,0,0,0};
-    int styleStout [] = {0,0,1,1,1,4,0,0,0};
-    int styleDemonic [] = {0,2,0,1,1,2,0,0,0};
-    int stylePure [] = {0,0,4,0,0,2,0,0,0};
-    int styleAgile [] = {0,0,0,3,3,0,0,0,0};
-    int stylePsionic [] = {0,6,0,0,0,0,0,0,0};
-    int styleFallen [] = {2,0,1,1,1,1,0,0,0};
+    int styleSavage [] = {3,0,0,0,2,0,1,0,0,0,0,0};
+    int styleDiabolic [] = {0,3,0,0,1,1,1,0,0,0,0,0};
+    int styleDivine [] = {0,0,3,0,1,1,1,0,0,0,0,0};
+    int styleStout [] = {0,0,1,0,1,1,4,0,0,0,0,0};
+    int styleDemonic [] = {0,2,0,0,1,1,2,0,0,0,0,0};
+    int stylePure [] = {0,0,4,0,0,0,2,0,0,0,0};
+    int styleAgile [] = {0,0,0,0,3,3,0,0,0,0,0};
+    int stylePsionic [] = {0,0,0,6,0,0,0,0,0,0,0};
+    int styleFallen [] = {2,0,1,0,1,1,1,0,0,0,0};
     //Race
-    int raceHuman [] = {2,2,2,2,2,2,0,0,0};
-    int raceElven [] = {1,3,1,3,3,1,0,0,0};
-    int raceDwarven [] = {3,1,1,1,1,5,0,0,0};
-    int raceUndead [] = {4,1,1,1,1,4,0,0,0};
-    int raceGoblin [] = {1,1,1,4,4,1,0,0,0};
-    int raceOgre [] = {6,1,1,1,1,2,0,0,0};
-    int raceAtlantean [] = {1,4,1,2,3,1,0,0,0};
-    int raceDraconic [] = {3,2,1,1,1,4,0,0,0};
-    int raceSpirit [] = {1,5,1,1,3,1,0,0,0};
+    int raceHuman [] = {3,3,3,0,3,3,3,25,0,0,0};
+    int raceElven [] = {2,4,1,1,4,4,2,27,0,0,0};
+    int raceDwarven [] = {4,1,2,0,2,2,7,30,0,0,0};
+    int raceUndead [] = {5,1,1,2,2,2,5,23,0,0,0};
+    int raceGoblin [] = {2,1,1,0,5,7,2,24,0,0,0};
+    int raceOgre [] = {6,1,1,0,1,1,2,20,0,0,0};
+    int raceAtlantean [] = {2,4,1,4,2,3,2,25,0,0,0};
+    int raceDraconic [] = {4,2,1,2,2,2,5,26,0,0,0};
+    int raceSpirit [] = {1,5,1,6,1,3,1,26,0,0,0};
     //class
-    int classWarrior [] = {2,0,0,1,0,3, 1, 20,0};
-    int classMage [] = {0,2,1,0,3,0,1,8,20};
-    int classThief [] = {1,0,0,2,2,1,1,12,0};
-    int classBerzerker [] = {4,0,0,1,1,0,1,16,0};
-    int classPriest [] = {0,0,3,1,1,1,1,10,15};
-    int classRanger [] = {2,0,0,2,2,0,1,14,0};
-    int classJuggernaut [] = {4,0,0,1,1,0,1,24,0};
-    int classMindweaver [] = {0,0,3,1,1,1,1,12,15};
-    int classShadow [] = {2,0,0,2,2,0,1,10,10};
+    int classWarrior [] = {2,0,0,1,0,3,0,0 1, 20,0};
+    int classMage [] = {0,2,1,0,3,0,0,0,1,8,20};
+    int classThief [] = {1,0,0,2,2,1,0,01,12,0};
+    int classBerzerker [] = {4,0,0,1,1,0,0,01,16,0};
+    int classPriest [] = {0,0,3,1,1,1,0,01,10,15};
+    int classRanger [] = {2,0,0,2,2,0,0,01,14,0};
+    int classJuggernaut [] = {4,0,0,1,1,0,0,01,24,0};
+    int classMindweaver [] = {0,0,3,1,1,1,0,01,12,15};
+    int classShadow [] = {2,0,0,2,2,0,0,01,10,10};
     //stats array def -str int, pie, qui, dex, con, lvl,hp,pow
-    static int charStats [] = {0,0,0,0,0,0,0,0,0};
+    static int charStats [] = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, qui, dex, con
-    static int charBonus [] = {0,0,0,0,0,0};
+    static int charBonus [] = {0,0,0,0,0,0,0,0};
     // stats array def - toHit, Dodge, AF, SPD
-    static int combatStats [] = {0,0,0,0};
+    static int combatStats [] = {0,0,0,0,0};
     //Main, Off, helm, chest, legs, boots, shoulders, arms, gloves, back
     static String gearWorn [] = {"None","None","None","None","None","None","None","None","None","None"};
 
