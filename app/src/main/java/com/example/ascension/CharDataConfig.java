@@ -32,21 +32,21 @@ public class CharDataConfig {
     int raceDraconic [] = {4,2,1,2,2,2,5,26,0,0,0};
     int raceSpirit [] = {1,5,1,6,1,3,1,26,0,0,0};
     //class
-    int classWarrior [] = {2,0,0,1,0,3,0,0 1, 20,0};
-    int classMage [] = {0,2,1,0,3,0,0,0,1,8,20};
-    int classThief [] = {1,0,0,2,2,1,0,01,12,0};
-    int classBerzerker [] = {4,0,0,1,1,0,0,01,16,0};
-    int classPriest [] = {0,0,3,1,1,1,0,01,10,15};
-    int classRanger [] = {2,0,0,2,2,0,0,01,14,0};
-    int classJuggernaut [] = {4,0,0,1,1,0,0,01,24,0};
-    int classMindweaver [] = {0,0,3,1,1,1,0,01,12,15};
-    int classShadow [] = {2,0,0,2,2,0,0,01,10,10};
+    int classWarrior [] = {2,0,0,0,1,0,3,30,1, 20,0};
+    int classMage [] = {0,2,1,0,0,3,0,20,1,8,20};
+    int classThief [] = {1,0,0,0,2,2,1,25,1,12,0};
+    int classBerzerker [] = {4,0,0,0,1,1,30,1,16,0};
+    int classPriest [] = {0,0,3,0,1,1,1,20,1,10,15};
+    int classRanger [] = {2,0,0,0,2,2,0,25,1,14,0};
+    int classJuggernaut [] = {4,0,0,0,1,1,0,30,1,24,0};
+    int classMindweaver [] = {0,1,0,4,0,1,0,20,1,12,15};
+    int classShadow [] = {2,0,0,0,2,2,0,25,1,10,10};
     //stats array def -str int, pie, qui, dex, con, lvl,hp,pow
     static int charStats [] = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, qui, dex, con
-    static int charBonus [] = {0,0,0,0,0,0,0,0};
+    static int []charBonus = {0,0,0,0,0,0,0,0};
     // stats array def - toHit, Dodge, AF, SPD
-    static int combatStats [] = {0,0,0,0,0};
+    static int [] combatStats = {0,0,0,0,0};
     //Main, Off, helm, chest, legs, boots, shoulders, arms, gloves, back
     static String gearWorn [] = {"None","None","None","None","None","None","None","None","None","None"};
 
@@ -160,14 +160,16 @@ public class CharDataConfig {
         charStats[3] = styleStats[3]+raceStats[3]+classStats[3];
         charStats[4] = styleStats[4]+raceStats[4]+classStats[4];
         charStats[5] = styleStats[5]+raceStats[5]+classStats[5];
-        charStats[6] = classStats[6];
+        charStats[6] = styleStats[6]+raceStats[6]+classStats[6];
+        charStats[7] = styleStats[7]+raceStats[7]+classStats[7];
+        charStats[8] = classStats[8];
         statsBonus();
-        charStats[7] = classStats[7]+ charBonus[5];
-        charStats[8] = styleStats[8]+ charBonus[2];
+        charStats[9] = classStats[9]+ charBonus[9];
+        charStats[10] = styleStats[10]+ charBonus[10];
     }
 
     public void statsBonus(){
-        for(int a = 0; a < 6; a++){
+        for(int a = 0; a < 8; a++){
             int bonusValue = 0;
             for(int b = 0; b < charStats[a]; b++){
                 if(b+bonusValue <= charStats[a] ){
@@ -183,5 +185,6 @@ public class CharDataConfig {
         combatStats[0] = charBonus[4]+10;
         combatStats[1] = charBonus[4]+charBonus[3];
         combatStats[3] = charBonus[3];
+        combatStats[4] = charBonus[1];
     }
 }
