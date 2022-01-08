@@ -67,12 +67,15 @@ public class CreateCharacter extends AppCompatActivity {
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
+        TextView staText = findViewById(R.id.sta);
         TextView intText = findViewById(R.id.intel);
         TextView pieText = findViewById(R.id.pie);
+        TextView psiText = findViewById(R.id.psi);
         TextView quiText = findViewById(R.id.qui);
         TextView toHitText = findViewById(R.id.toHit);
         TextView dodgeText = findViewById(R.id.dodge);
         TextView afText = findViewById(R.id.armor);
+        TextView resText = findViewById(R.id.res);
         TextView spdText = findViewById(R.id.speed);
         TextView hpText = findViewById(R.id.hp);
         TextView powText = findViewById(R.id.pow);
@@ -80,15 +83,18 @@ public class CreateCharacter extends AppCompatActivity {
         strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
         intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
         pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
-        dexText.setText("DEX: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
-        quiText.setText("QUI: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
-        conText.setText("CON: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
-        hpText.setText("HP: " + charSheet.charStats[7]);
-        powText.setText("POW: " +charSheet.charStats[8]);
+        psiText.setText("PSI: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
+        dexText.setText("DEX: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
+        quiText.setText("QUI: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
+        conText.setText("CON: " + charSheet.charStats[6] +" + "+ charSheet.charBonus[6]);
+        staText.setText("STA: " + charSheet.charStats[7]);
+        hpText.setText("HP: " + charSheet.charStats[9]);
+        powText.setText("POW: " +charSheet.charStats[10]);
         // stats array def - toHit, Dodge, AF, SPD
         toHitText.setText("toHit: "+ (charSheet.combatStats[0]+10));
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
-        spdText.setText("SPD: "+ charSheet.combatStats[3]);
+        resText.setText("RES: " + charSheet.charBonus[1]);
+        spdText.setText("SPD: "+ charSheet.combatStats[5]);
     }
 }
