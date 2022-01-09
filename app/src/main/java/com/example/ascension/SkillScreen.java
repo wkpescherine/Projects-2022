@@ -59,13 +59,18 @@ public class SkillScreen extends AppCompatActivity {
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
+        TextView staText = findViewById(R.id.sta);
         TextView intText = findViewById(R.id.intel);
         TextView pieText = findViewById(R.id.pie);
+        TextView psiText = findViewById(R.id.psi);
         TextView quiText = findViewById(R.id.qui);
         TextView toHitText = findViewById(R.id.toHit);
         TextView dodgeText = findViewById(R.id.dodge);
         TextView afText = findViewById(R.id.armor);
+        TextView resText = findViewById(R.id.res);
         TextView spdText = findViewById(R.id.speed);
+        TextView hpText = findViewById(R.id.hp);
+        TextView powText = findViewById(R.id.pow);
         TextView nameText = findViewById(R.id.nameChar);
         TextView proText = findViewById(R.id.profession);
         TextView skillText = findViewById(R.id.skillpts);
@@ -75,13 +80,18 @@ public class SkillScreen extends AppCompatActivity {
         strText.setText("STR: " + config.charStats[0] +" + "+ config.charBonus[0]);
         intText.setText("INT: " + config.charStats[1] +" + "+ config.charBonus[1]);
         pieText.setText("PIE: " + config.charStats[2] +" + "+ config.charBonus[2]);
+        psiText.setText("PSI: " + config.charStats[3] +" + "+ config.charBonus[3]);
         dexText.setText("DEX: " + config.charStats[3] +" + "+ config.charBonus[3]);
         quiText.setText("QUI: " + config.charStats[4] +" + "+ config.charBonus[4]);
         conText.setText("CON: " + config.charStats[5] +" + "+ config.charBonus[5]);
+        staText.setText("STA: " + config.charStats[7]);
+        hpText.setText("HP: " + config.charStats[9]);
+        powText.setText("POW: " +config.charStats[10]);
         // stats array def - toHit, Dodge, AF, SPD
         toHitText.setText("toHit: "+ (config.combatStats[0]+10));
         dodgeText.setText("Dodge: "+ config.combatStats[1]);
         afText.setText("AF: 0");
+        resText.setText("RES: " + config.charBonus[1]);
         spdText.setText("SPD: "+ config.combatStats[3]);
         //Skill point
         skillText.setText("Skill Points: " + config.skillPoints);

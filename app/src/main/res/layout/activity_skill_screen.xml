@@ -55,6 +55,13 @@
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/sta"
+                android:textColor="#fff"
+                android:text="STA: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
                 android:layout_width="90dp"
                 android:id="@+id/hp"
                 android:textColor="#fff"
@@ -78,6 +85,13 @@
                 android:id="@+id/pie"
                 android:textColor="#fff"
                 android:text="PIE: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/psi"
+                android:textColor="#fff"
+                android:text="PSI: 0">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
@@ -118,6 +132,13 @@
                 android:id="@+id/armor"
                 android:textColor="#fff"
                 android:text="AF: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/res"
+                android:textColor="#fff"
+                android:text="RES: 0">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
