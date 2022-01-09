@@ -76,14 +76,14 @@ public class SkillScreen extends AppCompatActivity {
         TextView skillText = findViewById(R.id.skillpts);
         //stats array def -str int, pie, qui, dex, con
         nameText.setText(config.charName);
-        proText.setText("LVL "+config.charStats[6]+" "+config.charStyle+ " "+config.charRace+ " "+config.charClass);
+        proText.setText("LVL "+config.charStats[8]+" "+config.charStyle+ " "+config.charRace+ " "+config.charClass);
         strText.setText("STR: " + config.charStats[0] +" + "+ config.charBonus[0]);
         intText.setText("INT: " + config.charStats[1] +" + "+ config.charBonus[1]);
         pieText.setText("PIE: " + config.charStats[2] +" + "+ config.charBonus[2]);
         psiText.setText("PSI: " + config.charStats[3] +" + "+ config.charBonus[3]);
-        dexText.setText("DEX: " + config.charStats[3] +" + "+ config.charBonus[3]);
-        quiText.setText("QUI: " + config.charStats[4] +" + "+ config.charBonus[4]);
-        conText.setText("CON: " + config.charStats[5] +" + "+ config.charBonus[5]);
+        dexText.setText("DEX: " + config.charStats[4] +" + "+ config.charBonus[4]);
+        quiText.setText("QUI: " + config.charStats[5] +" + "+ config.charBonus[5]);
+        conText.setText("CON: " + config.charStats[6] +" + "+ config.charBonus[6]);
         staText.setText("STA: " + config.charStats[7]);
         hpText.setText("HP: " + config.charStats[9]);
         powText.setText("POW: " +config.charStats[10]);
