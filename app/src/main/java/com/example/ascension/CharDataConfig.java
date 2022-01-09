@@ -6,7 +6,7 @@ public class CharDataConfig {
     static String charClass = "";
     static String charName = "";
     static int skillPoints = 0;
-    static int charSkills[] = {0,0};
+    static int charSkills[] = {0,0,0,0};
     //stats array def -str int, pie, psi, qui, dex, con, sta, lvl, hp ,pow
     int styleStats[] = {0,0,0,0,0,0,0,0,0,0,0};
     int raceStats[] = {0,0,0,0,0,0,0,0,0,0,0};

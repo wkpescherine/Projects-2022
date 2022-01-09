@@ -194,6 +194,20 @@
                 android:id="@+id/sparkU1"
                 android:text="Spark I"
                 android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mindnumbU1"
+                android:text="<imdNumb I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dualwieldU1"
+                android:text="Dual Wield I"
+                android:onClick="skillPicker"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="2dp"
@@ -224,6 +238,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/sparkA1"
                 android:text="Spark I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mindnumbA1"
+                android:text="<imdNumb I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dualwieldA1"
+                android:text="Dual Wield I"
                 android:onClick="skillPicker"/>
         </LinearLayout>
 

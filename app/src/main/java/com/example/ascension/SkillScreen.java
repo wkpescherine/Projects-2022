@@ -37,6 +37,10 @@ public class SkillScreen extends AppCompatActivity {
         TextView skill002 = findViewById(R.id.sweepA1);
         TextView skill003 = findViewById(R.id.sparkU1);
         TextView skill004 = findViewById(R.id.sparkA1);
+        TextView skill005 = findViewById(R.id.mindnumbU1);
+        TextView skill006 = findViewById(R.id.mindnumbA1);
+        TextView skill007 = findViewById(R.id.dualwieldU1);
+        TextView skill008 = findViewById(R.id.dualwieldA1);
         if(config.charSkills[0] == 0 && config.charStats[0] >= 5) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
@@ -52,6 +56,22 @@ public class SkillScreen extends AppCompatActivity {
         if (config.charSkills[1] == 1){
             skill003.setVisibility(View.GONE);
             skill004.setVisibility(View.VISIBLE);
+        }
+        if(config.charSkills[2] == 0 && config.charClass.equals("MindWeaver")) {
+            skill005.setVisibility(View.VISIBLE);
+            skill006.setVisibility(View.GONE);
+        }
+        if(config.charSkills[2] == 1){
+            skill005.setVisibility(View.GONE);
+            skill006.setVisibility(View.VISIBLE);
+        }
+        if(config.charSkills[3] == 0 && config.charClass.equals("Berzerker")) {
+            skill007.setVisibility(View.VISIBLE);
+            skill008.setVisibility(View.GONE);
+        }
+        if (config.charSkills[3] == 1){
+            skill007.setVisibility(View.GONE);
+            skill008.setVisibility(View.VISIBLE);
         }
     }
 
