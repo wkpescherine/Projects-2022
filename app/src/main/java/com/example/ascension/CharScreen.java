@@ -26,9 +26,11 @@ public class CharScreen extends AppCompatActivity {
         TextView strText = findViewById(R.id.strength);
         TextView intText = findViewById(R.id.intelligence);
         TextView pieText = findViewById(R.id.piety);
+        TextView psiText = findViewById(R.id.psionic);
         TextView dexText = findViewById(R.id.dexterity);
         TextView quiText = findViewById(R.id.quickness);
         TextView conText = findViewById(R.id.constitution);
+        TextView staText = findViewById(R.id.stamina);
         TextView hpText = findViewById(R.id.hp);
         TextView powText = findViewById(R.id.power);
         //The following are the setting of the text
@@ -37,9 +39,11 @@ public class CharScreen extends AppCompatActivity {
         strText.setText("STR: " +chSheet.strength);
         intText.setText("INT: " +chSheet.intelligence);
         pieText.setText("PIE: " +chSheet.piety);
+        psiText.setText("DEX: " +chSheet.psionic);
         dexText.setText("DEX: " +chSheet.dexterity);
         quiText.setText("QUI: " +chSheet.quickness);
         conText.setText("CON: " +chSheet.constitution);
+        staText.setText("CON: " +chSheet.stamina);
         hpText.setText("HP: " +chSheet.hp);
         powText.setText("POW: " +chSheet.power);
     }

@@ -14,16 +14,21 @@ public class CharSheet {
     static int intelligenceBonus = 0;
     static int piety = 0;
     static int pietyBonus = 0;
+    static int psionic = 0;
+    static int psionicBonus = 0;
     static int dexterity = 0;
     static int dexterityBonus = 0;
     static int quickness = 0;
     static int quicknessBonus = 0;
     static int constitution = 0;
     static int constitutionBonus = 0;
+    static int stamina = 0;
+
     static int hp = 0;
     static int power = 0;
     static int AF = 0;
     static int AFReduce = 0;
+    static int resistance = 0;
     static String weapon = "";
     static int weaponValues []= {0,0};
     static String helm = "";
@@ -35,12 +40,15 @@ public class CharSheet {
         strength = config.charStats[0];
         intelligence = config.charStats[1];
         piety = config.charStats[2];
-        dexterity = config.charStats[3];
-        quickness = config.charStats[4];
-        constitution = config.charStats[5];
+        psionic = config.charStats[3];
+        dexterity = config.charStats[4];
+        quickness = config.charStats[5];
+        constitution = config.charStats[6];
+        stamina = config.charStats[7];
         hp = config.charStats[7];
         power = config.charStats[8];
         AF = config.combatStats[2];
+        resistance = psionicBonus;
     }
 
     public int updateCharBonus(int stat){
@@ -57,6 +65,7 @@ public class CharSheet {
         strengthBonus = updateCharBonus(strength);
         intelligenceBonus = updateCharBonus(intelligence);
         pietyBonus = updateCharBonus(piety);
+        psionicBonus = updateCharBonus(psionic);
         dexterityBonus = updateCharBonus(dexterity);
         quicknessBonus = updateCharBonus(quickness);
         constitutionBonus = updateCharBonus(constitution);
