@@ -11,17 +11,17 @@ public class CharDataConfig {
     int styleStats[] = {0,0,0,0,0,0,0,0,0,0,0};
     int raceStats[] = {0,0,0,0,0,0,0,0,0,0,0};
     int classStats[] = {0,0,0,0,0,0,0,0,0,0,0};
-    //Styles
-    int styleSavage [] = {3,0,0,0,2,0,1,0,0,0,0,0};
-    int styleDiabolic [] = {0,3,0,0,1,1,1,0,0,0,0,0};
-    int styleDivine [] = {0,0,3,0,1,1,1,0,0,0,0,0};
-    int styleStout [] = {0,0,1,0,1,1,4,0,0,0,0,0};
-    int styleDemonic [] = {0,2,0,0,1,1,2,0,0,0,0,0};
-    int stylePure [] = {0,0,4,0,0,0,2,0,0,0,0};
-    int styleAgile [] = {0,0,0,0,3,3,0,0,0,0,0};
-    int stylePsionic [] = {0,0,0,6,0,0,0,0,0,0,0};
-    int styleFallen [] = {2,0,1,0,1,1,1,0,0,0,0};
-    //Race
+    //Styles 12 points
+    int styleSavage [] = {6,0,0,0,2,3,1,0,0,0,0,0};
+    int styleDiabolic [] = {0,5,0,0,2,4,1,0,0,0,0,0};
+    int styleDivine [] = {0,0,6,0,1,3,2,0,0,0,0,0};
+    int styleStout [] = {0,0,2,0,2,2,6,0,0,0,0,0};
+    int styleDemonic [] = {0,4,0,0,2,2,4,0,0,0,0,0};
+    int stylePure [] = {0,0,8,0,0,0,4,0,0,0,0};
+    int styleAgile [] = {2,0,0,0,6,4,0,0,0,0,0};
+    int stylePsionic [] = {0,3,0,9,0,0,0,0,0,0,0};
+    int styleFallen [] = {4,0,3,0,1,2,2,0,0,0,0};
+    //Race 12 points
     int raceHuman [] = {3,3,3,0,3,3,3,25,0,0,0};
     int raceElven [] = {2,4,1,1,4,4,2,27,0,0,0};
     int raceDwarven [] = {4,1,2,0,2,2,7,30,0,0,0};
@@ -31,16 +31,16 @@ public class CharDataConfig {
     int raceAtlantean [] = {2,4,1,4,2,3,2,25,0,0,0};
     int raceDraconic [] = {4,2,1,2,2,2,5,26,0,0,0};
     int raceSpirit [] = {1,5,1,6,1,3,1,26,0,0,0};
-    //class
-    int classWarrior [] = {2,0,0,0,1,0,3,30,1, 20,0};
-    int classMage [] = {0,2,1,0,0,3,0,20,1,8,20};
-    int classThief [] = {1,0,0,0,2,2,1,25,1,12,0};
-    int classBerzerker [] = {4,0,0,0,1,1,30,1,16,0};
-    int classPriest [] = {0,0,3,0,1,1,1,20,1,10,15};
-    int classRanger [] = {2,0,0,0,2,2,0,25,1,14,0};
-    int classJuggernaut [] = {4,0,0,0,1,1,0,30,1,24,0};
-    int classMindweaver [] = {0,1,0,4,0,1,0,20,1,12,15};
-    int classShadow [] = {2,0,0,0,2,2,0,25,1,10,10};
+    //class 12 points
+    int classWarrior [] = {4,0,0,0,2,2,4,30,1, 20,0};
+    int classMage [] = {0,6,2,0,0,4,0,20,1,8,20};
+    int classThief [] = {2,0,0,0,5,3,2,25,1,12,0};
+    int classBerzerker [] = {8,0,0,0,2,2,30,1,16,0};
+    int classPriest [] = {0,0,7,0,1,3,2,20,1,10,15};
+    int classRanger [] = {3,0,1,0,4,4,0,25,1,14,0};
+    int classJuggernaut [] = {8,0,0,0,1,1,2,30,1,24,0};
+    int classMindweaver [] = {0,3,0,8,0,1,0,20,1,12,15};
+    int classShadow [] = {3,1,0,1,3,3,1,25,1,10,10};
     //stats array def -str int, pie, qui, dex, con, lvl,hp,pow
     static int charStats [] = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, qui, dex, con
