@@ -164,8 +164,8 @@ public class CharDataConfig {
         charStats[7] = styleStats[7]+raceStats[7]+classStats[7];
         charStats[8] = classStats[8];
         statsBonus();
-        charStats[9] = classStats[9]+ charBonus[9];
-        charStats[10] = styleStats[10]+ charBonus[10];
+        charStats[9] = classStats[9]+ charBonus[7];
+        charStats[10] = styleStats[10]+ charBonus[1];
     }
 
     public void statsBonus(){
