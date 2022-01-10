@@ -35,7 +35,7 @@ public class CharDataConfig {
     int classWarrior [] = {4,0,0,0,2,2,4,30,1, 20,0};
     int classMage [] = {0,6,2,0,0,4,0,20,1,8,20};
     int classThief [] = {2,0,0,0,5,3,2,25,1,12,0};
-    int classBerzerker [] = {8,0,0,0,2,2,30,1,16,0};
+    int classBerzerker [] = {8,0,0,0,2,2,0,30,1,16,0};
     int classPriest [] = {0,0,7,0,1,3,2,20,1,10,15};
     int classRanger [] = {3,0,1,0,4,4,0,25,1,14,0};
     int classJuggernaut [] = {8,0,0,0,1,1,2,30,1,24,0};
