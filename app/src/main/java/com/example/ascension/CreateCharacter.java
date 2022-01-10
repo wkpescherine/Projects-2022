@@ -95,6 +95,6 @@ public class CreateCharacter extends AppCompatActivity {
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
         resText.setText("RES: " + charSheet.charBonus[1]);
-        spdText.setText("SPD: "+ charSheet.combatStats[5]);
+        spdText.setText("SPD: "+ charSheet.combatStats[4]);
     }
 }
