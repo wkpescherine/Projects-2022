@@ -5,7 +5,8 @@
 *********************************************************************************
 2.3.1 Added2 new skills to the skills handler
       Added new skills to the skill screen
-      Upfated stats on CharData to be more balanced
+      Updated stats on CharData to be more balanced
+      Minor data fixes
 2.2.7 Updated Skill Screen to include the new stats
       Added an Errors Log Tracker to the main file 
       Update Char Screen to include new stats 
