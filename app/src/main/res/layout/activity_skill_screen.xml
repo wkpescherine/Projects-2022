@@ -199,7 +199,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/mindnumbU1"
-                android:text="<imdNumb I"
+                android:text="mimdNumb I"
                 android:onClick="skillPicker"/>
             <Button
                 android:visibility="gone"
