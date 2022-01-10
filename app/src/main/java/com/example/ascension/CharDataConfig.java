@@ -164,7 +164,7 @@ public class CharDataConfig {
         charStats[7] = styleStats[7]+raceStats[7]+classStats[7];
         charStats[8] = classStats[8];
         statsBonus();
-        charStats[9] = classStats[9]+ charBonus[7];
+        charStats[9] = classStats[9]+ charBonus[6];
         charStats[10] = styleStats[10]+ charBonus[1];
     }
 
@@ -182,8 +182,10 @@ public class CharDataConfig {
     }
 
     public void setCombatStats(){
+        // array def   = toHit, Dodge, AF, SPD
+        // combatStats = {0,0,0,0,0};
         combatStats[0] = charBonus[4]+10;
-        combatStats[1] = charBonus[4]+charBonus[3];
+        combatStats[1] = charBonus[4]+charBonus[5];
         combatStats[3] = charBonus[3];
         combatStats[4] = charBonus[1];
     }

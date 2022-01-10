@@ -91,7 +91,7 @@ public class CreateCharacter extends AppCompatActivity {
         hpText.setText("HP: " + charSheet.charStats[9]);
         powText.setText("POW: " +charSheet.charStats[10]);
         // stats array def - toHit, Dodge, AF, SPD
-        toHitText.setText("toHit: "+ (charSheet.combatStats[0]+10));
+        toHitText.setText("toHit: "+ (charSheet.combatStats[0]));
         dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
         afText.setText("AF: 0");
         resText.setText("RES: " + charSheet.charBonus[1]);
