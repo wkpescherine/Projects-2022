@@ -8,21 +8,21 @@ public class GearBuilder {
     String gearType = "";
     int upper = 3;
     //damage, spd, AF
-    int gearValues [] = {0,0,0};
-    int tempValues [][] ={{0,0,0}, {0,0,0}, {0,0,0}};
-    String gearWeaponQualityNames [] = {"Pitted", "Rusty", "Poor"};
-    String gearWeaponMaterialNames [] = {"Iron","Steel", "Bronze"};
-    String gearWeaponTypes [] = {"Dagger", "Short Sword", "Staff"};
-    int gearWeaponQualityValues [][] = {{1,0,0}, {2,0,0}, {3,0,0}};
-    int gearWeaponMaterialValues [][] = {{1,0,0}, {2,0,0}, {3,0,0}};
-    int gearWeaponValues [][] = {{1,5,0}, {2,3,0}, {1,3,0}};
+    int []gearValues    = {0,0,0};
+    int [][]tempValues  = {{0,0,0}, {0,0,0}, {0,0,0}};
+    String [] gearWeaponQualityNames  = {"Pitted", "Rusty", "Poor", "Weak", "Basic", "Excellent", "Superior","Perfect", "Legendary", "Mythical"};
+    String [] gearWeaponMaterialNames = {"Iron","Steel", "Bronze", "?????","?????", "Damascues","Titanium","Mithril", "?????", "Astral"};
+    String [] gearWeaponTypes         = {"Dagger", "Short Sword", "Staff", "Long Sword", "Bastard Sword" "Axed", "War Hammer", "Maul", "Claymore"};
+    int [][] gearWeaponQualityValues  = {{1,0,0}, {2,0,0}, {3,0,0}, {4,1,0}, {5,1,0}, {6,1,0}, {7,2,0}, {8,2,0}, {9,2,0}, {10,3,0}};
+    int [][] gearWeaponMaterialValues = {{1,0,0}, {2,0,0}, {3,0,0}, {3,0,0}, {3,0,0}, {3,0,0}, {3,0,0}, {3,0,0}, {3,0,0}, {3,0,0}};
+    int [][] gearWeaponValues         = {{1,5,0}, {2,3,0}, {1,3,0}, {5,3,0}, {7,2,0}, {6,2,0}, {8,2,0}, {14,0,0}, {12,1,0}};
     //Armor Section
-    String gearArmorQualitNames[] = {"Tattered", "Worn","Ragged"};
-    String gearArmorMaterialNames[] = {"Cloth", "Hide", "Leather"};
-    String gearArmorTypes [] = {"Helm", "Chest", "Legs", "Boots"};
-    int armorQualityValues [][] = {{0,0,1},{0,0,2},{0,0,3}};
-    int armorMaterialValues [][] = {{0,0,1},{0,0,2},{0,0,3}};
-    int armorTypeValues [][] = {{0,0,1},{0,0,5},{0,0,3},{0,0,1}};
+    String [] gearArmorQualitNames    = {"Tattered", "Worn","Ragged"};
+    String [] gearArmorMaterialNames  = {"Cloth", "Hide", "Leather"};
+    String [] gearArmorTypes          = {"Helm", "Chest", "Legs", "Boots"};
+    int [][] armorQualityValues       = {{0,0,1},{0,0,2},{0,0,3}};
+    int [][] armorMaterialValues      = {{0,0,1},{0,0,2},{0,0,3}};
+    int [][] armorTypeValues          = {{0,0,1},{0,0,5},{0,0,3},{0,0,1}};
 
     public void gearQuality(){
         Random rand = new Random();
