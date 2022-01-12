@@ -225,8 +225,8 @@ public class CharDataConfig {
         // combatStats = {0,0,0,0,0};
         combatStats[0] = charBonus[4]+10;
         combatStats[1] = charBonus[4]+charBonus[5];
-        combatStats[3] = charBonus[3];
-        combatStats[4] = charBonus[1];
-        combatStats[5] = charBonus[5];
+        combatStats[2] = charBonus[3];
+        combatStats[3] = charBonus[1];
+        combatStats[4] = charBonus[5];
     }
 }
