@@ -119,7 +119,8 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void startGame(View v){
-        charSheet.buildCharSheet();
+        //charSheet.buildCharSheet();
+        charSheet.updateCharSheet();
         saveChar.writeCharToFile();
         Intent intent2 = new Intent(this, TownScreen.class);
         startActivity(intent2);
