@@ -10,7 +10,8 @@ import android.widget.TextView;
 import android.widget.EditText;
 
 public class CreateCharacter extends AppCompatActivity {
-    CharDataConfig charSheet = new CharDataConfig();
+    CharDataConfig config = new CharDataConfig();
+    CharSheet charSheet2 = new CharSheet();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,7 @@ public class CreateCharacter extends AppCompatActivity {
         EditText nameChar = findViewById(R.id.editName);
         charSheet.charName = nameChar.getText().toString();
         if(charSheet.charName.length() != 0 && charSheet.charStyle.length() != 0 && charSheet.charRace.length() != 0 && charSheet.charClass.length() != 0){
+            charSheet.setMainStats()
             Intent intent2 = new Intent(this, SkillScreen.class);
             startActivity(intent2);
         }

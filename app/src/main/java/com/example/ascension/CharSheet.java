@@ -51,6 +51,17 @@ public class CharSheet {
         return bonusValue;
     }
 
+    public void setMainStats(int [] stats){
+        strength += stats[0];
+        intelligence += stats[1];
+        piety += stats[2];
+        psionic += stats[3];
+        dexterity += stats[4];
+        quickness += stats[5];
+        constitution += stats[6];
+        stamina += stats[7];
+    }
+
     public void updateCharSheet(){
         strengthBonus = updateCharBonus(strength);
         intelligenceBonus = updateCharBonus(intelligence);
