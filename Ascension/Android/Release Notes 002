@@ -3,6 +3,9 @@
 **                            Ascension - Android                              **
 **                                                                             **
 *********************************************************************************
+2.3.5 Updated Gear Builder to be able to randomize items
+      Updated to include basic starter gear
+      Updating char Sheet to handle gear
 2.3.4 Updated Gear Builder to include more stats
 2.3.3 Minor Bug Fixes
       Updating Gear Builder
