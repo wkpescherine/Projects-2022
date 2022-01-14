@@ -31,8 +31,8 @@ public class GearBuilder {
         Random rand = new Random();
         int gearInt = rand.nextInt(upper);
         int itemInt = rand.nextInt(lower);
-        if(itemInt == 0){ item = "weapon"}
-        else{ item == "other"}
+        if(itemInt == 0){ item = "weapon";}
+        else{ item = "other";}
         if(gearInt > 0 && gearInt<=1000000000){selection = 0;}
         if(gearInt >= 1000000001 && gearInt<=1100000000){selection = 1;}
         if(gearInt >= 1100000001 && gearInt<=1110000000){selection = 2;}
@@ -89,9 +89,9 @@ public class GearBuilder {
     }
 
     public void buildItem(){
-        gearMaterial();
-        gearQuality();
-        gearType();
+        gearMaterial(item);
+        gearQuality(item);
+        gearType(item);
         resetGearValues();
     }
 
