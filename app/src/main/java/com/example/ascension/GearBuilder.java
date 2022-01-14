@@ -3,6 +3,7 @@ package com.example.ascension;
 import java.util.Random;
 
 public class GearBuilder {
+    CharSheet charSheet = new CharSheet();
     String gearQuality = "";
     String gearMaterial = "";
     String gearType = "";
@@ -96,6 +97,19 @@ public class GearBuilder {
     }
 
     public void starterGear(){
-
+        int [] weaponValue = {3,5};
+        int [] armorValues = {0,0,7,5,3,0,0,0};
+        charSheet.AFValues = armorValues;
+        charSheet.AF = 15;
+        charSheet.mainHand = "Pitted Copper Dagger";
+        charSheet.mainHandValues = weaponValue;
+        charSheet.offHand = "none";
+        charSheet.helmOn = "none";
+        charSheet.chestOn = "Tattered Wool Chest";
+        charSheet.legsOn = "Tattered Wool Legs";
+        charSheet.bootsOn = "Tattered Wool Boots";
+        charSheet.shoulderOn = "none";
+        charSheet.armsOn = "none";
+        charSheet.glovesOn = "none";
     }
 }

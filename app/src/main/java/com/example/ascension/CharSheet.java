@@ -3,11 +3,11 @@ package com.example.ascension;
 import android.widget.TextView;
 
 public class CharSheet {
-    CharDataConfig config = new CharDataConfig();
-
     static String name = "";
     static int level = 1;
-    static String profession = "";
+    static String style = "";
+    static String race = "";
+    static String prof = "";
     static int strength = 0;
     static int strengthBonus = 0;
     static int intelligence = 0;
@@ -23,33 +23,23 @@ public class CharSheet {
     static int constitution = 0;
     static int constitutionBonus = 0;
     static int stamina = 0;
+    static String mainHand = "";
+    static int [] mainHandValues = {0,0};
+    static String offHand = "";
+    static String helmOn = "";
+    static String chestOn = "";
+    static String legsOn = "";
+    static String bootsOn = "";
+    static String shoulderOn = "";
+    static String armsOn = "";
+    static String glovesOn = "";
+    static int [] AFValues = {0,0,0,0,0,0,0,0};
 
     static int hp = 0;
     static int power = 0;
     static int AF = 0;
     static int AFReduce = 0;
     static int resistance = 0;
-    static String weapon = "";
-    static int weaponValues []= {0,0};
-    static String helm = "";
-    static int helmAF = 0;
-
-    public void buildCharSheet(){
-        name = config.charName;
-        profession = config.charStyle+" "+ config.charRace +" "+ config.charClass;
-        strength = config.charStats[0];
-        intelligence = config.charStats[1];
-        piety = config.charStats[2];
-        psionic = config.charStats[3];
-        dexterity = config.charStats[4];
-        quickness = config.charStats[5];
-        constitution = config.charStats[6];
-        stamina = config.charStats[7];
-        hp = config.charStats[7];
-        power = config.charStats[8];
-        AF = config.combatStats[2];
-        resistance = psionicBonus;
-    }
 
     public int updateCharBonus(int stat){
         int bonusValue = 0;
@@ -69,5 +59,6 @@ public class CharSheet {
         dexterityBonus = updateCharBonus(dexterity);
         quicknessBonus = updateCharBonus(quickness);
         constitutionBonus = updateCharBonus(constitution);
+        resistance = intelligenceBonus;
     }
 }
