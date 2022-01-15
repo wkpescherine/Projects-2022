@@ -23,6 +23,8 @@ public class CharSheet {
     static int constitution = 0;
     static int constitutionBonus = 0;
     static int stamina = 0;
+    static int toHit = 0;
+    static int dodge = 0;
     static String mainHand = "";
     static int [] mainHandValues = {0,0};
     static String offHand = "";
