@@ -49,6 +49,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text=""
+        android:id="@+id/psionic"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
         android:id="@+id/dexterity"
         android:textColor="#fff"/>
     <TextView
@@ -70,6 +77,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text=""
+        android:id="@+id/stamina"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
         android:id="@+id/hp"
         android:textColor="#fff"/>
     <TextView
@@ -78,6 +92,27 @@
         android:layout_gravity="center"
         android:text=""
         android:id="@+id/power"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/armor"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/speed"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/res"
         android:textColor="#fff"/>
 
     <Button

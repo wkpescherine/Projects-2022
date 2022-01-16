@@ -10,7 +10,8 @@ import android.widget.TextView;
 import android.widget.EditText;
 
 public class CreateCharacter extends AppCompatActivity {
-    CharDataConfig charSheet = new CharDataConfig();
+    CharDataConfig config = new CharDataConfig();
+    CharSheet charSheet = new CharSheet();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t1 = (TextView) v;
         String selectStyle = t1.getText().toString();
         TextView styleText = findViewById(R.id.charStyleHolder);
-        charSheet.updateStyle(selectStyle);
+        config.updateStyle(selectStyle);
         styleText.setText(selectStyle);
         setStats();
     }
@@ -34,7 +35,7 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t2 = (TextView) v;
         String selectRace = t2.getText().toString();
         TextView raceText = findViewById(R.id.charRaceHolder);
-        charSheet.updateRace(selectRace);
+        config.updateRace(selectRace);
         raceText.setText(selectRace);
         setStats();
     }
@@ -43,21 +44,22 @@ public class CreateCharacter extends AppCompatActivity {
         TextView t3 = (TextView) v;
         String selectClass = t3.getText().toString();
         TextView classText = findViewById(R.id.charClassHolder);
-        charSheet.updateClass(selectClass);
+        config.updateClass(selectClass);
         classText.setText(selectClass);
         setStats();
     }
 
     public void backToMain(View v){
-        charSheet.resetUI();
+        config.resetUI();
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
 
     public void loadSkills(View v){
         EditText nameChar = findViewById(R.id.editName);
-        charSheet.charName = nameChar.getText().toString();
-        if(charSheet.charName.length() != 0 && charSheet.charStyle.length() != 0 && charSheet.charRace.length() != 0 && charSheet.charClass.length() != 0){
+        config.charName = nameChar.getText().toString();
+        if(config.charName.length() != 0 && config.charStyle.length() != 0 && config.charRace.length() != 0 && config.charClass.length() != 0){
+            charSheet.setMainStats(config.charStats);
             Intent intent2 = new Intent(this, SkillScreen.class);
             startActivity(intent2);
         }
@@ -80,21 +82,21 @@ public class CreateCharacter extends AppCompatActivity {
         TextView hpText = findViewById(R.id.hp);
         TextView powText = findViewById(R.id.pow);
         //stats array def -str int, pie, qui, dex, con
-        strText.setText("STR: " + charSheet.charStats[0] +" + "+ charSheet.charBonus[0]);
-        intText.setText("INT: " + charSheet.charStats[1] +" + "+ charSheet.charBonus[1]);
-        pieText.setText("PIE: " + charSheet.charStats[2] +" + "+ charSheet.charBonus[2]);
-        psiText.setText("PSI: " + charSheet.charStats[3] +" + "+ charSheet.charBonus[3]);
-        dexText.setText("DEX: " + charSheet.charStats[4] +" + "+ charSheet.charBonus[4]);
-        quiText.setText("QUI: " + charSheet.charStats[5] +" + "+ charSheet.charBonus[5]);
-        conText.setText("CON: " + charSheet.charStats[6] +" + "+ charSheet.charBonus[6]);
-        staText.setText("STA: " + charSheet.charStats[7]);
-        hpText.setText("HP: " + charSheet.charStats[9]);
-        powText.setText("POW: " +charSheet.charStats[10]);
+        strText.setText("STR: " + charSheet.strength +" + "+ charSheet.strengthBonus);
+        intText.setText("INT: " + charSheet.intelligence +" + "+ charSheet.intelligenceBonus);
+        pieText.setText("PIE: " + charSheet.piety +" + "+ charSheet.pietyBonus);
+        psiText.setText("PSI: " + charSheet.psionic +" + "+ charSheet.psionicBonus);
+        dexText.setText("DEX: " + charSheet.dexterity +" + "+ charSheet.dexterityBonus);
+        quiText.setText("QUI: " + charSheet.quickness +" + "+ charSheet.quicknessBonus);
+        conText.setText("CON: " + charSheet.constitution +" + "+ charSheet.constitutionBonus);
+        staText.setText("STA: " + charSheet.stamina);
+        hpText.setText("HP: " + charSheet.hp);
+        powText.setText("POW: " +charSheet.power);
         // stats array def - toHit, Dodge, AF, SPD
-        toHitText.setText("toHit: "+ (charSheet.combatStats[0]+10));
-        dodgeText.setText("Dodge: "+ charSheet.combatStats[1]);
-        afText.setText("AF: 0");
-        resText.setText("RES: " + charSheet.charBonus[1]);
-        spdText.setText("SPD: "+ charSheet.combatStats[5]);
+        toHitText.setText("toHit: "+ (charSheet.toHit));
+        dodgeText.setText("Dodge: "+ charSheet.dexterityBonus);
+        afText.setText("AF: " + charSheet.AF);
+        resText.setText("RES: " + charSheet.resistance);
+        spdText.setText("SPD: "+ charSheet.quicknessBonus);
     }
 }
