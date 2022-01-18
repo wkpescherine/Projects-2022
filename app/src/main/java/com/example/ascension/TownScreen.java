@@ -18,6 +18,10 @@ public class TownScreen extends AppCompatActivity {
         getSupportActionBar().hide();
     }
 
+    public void clickTavern(){}
+
+    public void clickAlchemist(){}
+
     public void clickForge(){}
 
     public void clickHome(){}

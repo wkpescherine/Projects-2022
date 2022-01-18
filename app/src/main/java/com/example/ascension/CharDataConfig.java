@@ -4,15 +4,16 @@ public class CharDataConfig {
     CharSheet charSheet = new CharSheet();
 
     static String charStyle = "";
-    static String charRace = "";
+    static String charRace  = "";
     static String charClass = "";
-    static String charName = "";
-    static int skillPoints = 0;
-    static int charSkills[] = {0,0,0,0};
+    static String charName  = "";
+    static int skillPoints  = 0;
+    //Currently sitting on 8 skills.
+    static int [] charSkills = {0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, psi, qui, dex, con, sta, lvl, hp ,pow
-    int styleStats[] = {0,0,0,0,0,0,0,0,0,0,0};
-    int raceStats[] = {0,0,0,0,0,0,0,0,0,0,0};
-    int classStats[] = {0,0,0,0,0,0,0,0,0,0,0};
+    int [] styleStats    = {0,0,0,0,0,0,0,0,0,0,0};
+    int [] raceStats     = {0,0,0,0,0,0,0,0,0,0,0};
+    int [] classStats    = {0,0,0,0,0,0,0,0,0,0,0};
     //Styles 12 points
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
     int [] styleSavage   = {6,0,0,0,2,3,1,0,0,0,0};
@@ -55,7 +56,7 @@ public class CharDataConfig {
     int [] classPaladin     = {3,0,3,0,2,1,3,30,1,25,8};
     int [] classFlayer      = {0,4,0,6,0,2,0,20,1,12,20};
     int [] classSlither     = {2,3,0,0,2,3,2,25,1,15,10};
-    //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow//stats array def -str int, pie, qui, dex, con, lvl,hp,pow
+    //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
     static int charStats [] = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, psi, dex, qui, con, sta
     static int []charBonus = {0,0,0,0,0,0,0,0};

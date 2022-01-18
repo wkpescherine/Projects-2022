@@ -3,8 +3,11 @@ package com.example.ascension;
 import android.widget.TextView;
 
 public class CharSheet {
+    //Char Stats
     static String name = "";
     static int level = 1;
+    static int currentXP = 0;
+    static int nextLvlXP = 1000;
     static String style = "";
     static String race = "";
     static String prof = "";
@@ -23,8 +26,6 @@ public class CharSheet {
     static int constitution = 0;
     static int constitutionBonus = 0;
     static int stamina = 0;
-    static int toHit = 0;
-    static int dodge = 0;
     static String mainHand = "";
     static int [] mainHandValues = {0,0};
     static String offHand = "";
@@ -36,10 +37,13 @@ public class CharSheet {
     static String armsOn = "";
     static String glovesOn = "";
     static int [] AFValues = {0,0,0,0,0,0,0,0};
-
+    //Combat stats
     static int hp = 0;
     static int power = 0;
+    static int toHit = 0;
+    static int dodge = 0;
     static int AF = 0;
+    static int damage = 0;
     static int AFReduce = 0;
     static int resistance = 0;
 

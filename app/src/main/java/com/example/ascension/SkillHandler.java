@@ -5,11 +5,11 @@ public class SkillHandler {
 
     public void SkillList(String skill){
         switch(skill) {
-            case "sweepU1":
+            case "slashU1":
                 charSheet.charSkills[0] = 1;
                 charSheet.skillPoints -= 1;
                 break;
-            case "sweepA1":
+            case "slashA1":
                 charSheet.charSkills[0] = 0;
                 charSheet.skillPoints += 1;;
                 break;
@@ -29,12 +29,44 @@ public class SkillHandler {
                 charSheet.charSkills[2] = 0;
                 charSheet.skillPoints += 1;
                 break;
-            case "dualweildU1":
+            case "dualwieldU1":
                 charSheet.charSkills[3] = 1;
                 charSheet.skillPoints -= 1;
                 break;
-            case "dualwielkdA":
+            case "dualwieldA1":
                 charSheet.charSkills[3] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "lifetapU1":
+                charSheet.charSkills[4] = 1;
+                charSheet.skillPoints -= 1;
+                break;
+            case "lifetapA1":
+                charSheet.charSkills[4] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "healU1":
+                charSheet.charSkills[5] = 1;
+                charSheet.skillPoints -= 1;
+                break;
+            case "healA1":
+                charSheet.charSkills[5] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "stealthU1":
+                charSheet.charSkills[6] = 0;
+                charSheet.skillPoints -= 1;
+                break;
+            case "stealthA1":
+                charSheet.charSkills[6] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "quickshotU1":
+                charSheet.charSkills[7] = 0;
+                charSheet.skillPoints -= 1;
+                break;
+            case "quickshotA1":
+                charSheet.charSkills[7] = 0;
                 charSheet.skillPoints += 1;
                 break;
         }
