@@ -93,6 +93,22 @@ public class SkillScreen extends AppCompatActivity {
             skill009.setVisibility(View.GONE);
             skill010.setVisibility(View.VISIBLE);
         }
+        if(config.charSkills[6] == 0 && (config.charClass.equals("Thief") || config.charClass.equals("Slither"))) {
+            skill009.setVisibility(View.VISIBLE);
+            skill010.setVisibility(View.GONE);
+        }
+        if (config.charSkills[6] == 1){
+            skill009.setVisibility(View.GONE);
+            skill010.setVisibility(View.VISIBLE);
+        }
+        if(config.charSkills[7] == 0 && (config.charClass.equals("Ranger"))) {
+            skill009.setVisibility(View.VISIBLE);
+            skill010.setVisibility(View.GONE);
+        }
+        if (config.charSkills[7] == 1){
+            skill009.setVisibility(View.GONE);
+            skill010.setVisibility(View.VISIBLE);
+        }
     }
 
     public void setStats(){

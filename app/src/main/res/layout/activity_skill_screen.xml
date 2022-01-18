@@ -222,6 +222,20 @@
                 android:id="@+id/healU1"
                 android:text="Heal I"
                 android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stealthU1"
+                android:text="Stealth I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quickshotU1"
+                android:text="Quick Shot I"
+                android:onClick="skillPicker"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="2dp"
@@ -280,6 +294,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/healA1"
                 android:text="Heal I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stealthA1"
+                android:text="Stealth I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quickshotA1"
+                android:text="Quick Shot I"
                 android:onClick="skillPicker"/>
         </LinearLayout>
 

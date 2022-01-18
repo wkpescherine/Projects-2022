@@ -49,8 +49,24 @@ public class SkillHandler {
                 charSheet.charSkills[5] = 1;
                 charSheet.skillPoints -= 1;
                 break;
-            case "heal":
+            case "healA1":
                 charSheet.charSkills[5] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "stealthU1":
+                charSheet.charSkills[6] = 0;
+                charSheet.skillPoints -= 1;
+                break;
+            case "stealthA1":
+                charSheet.charSkills[6] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "quickshotU1":
+                charSheet.charSkills[7] = 0;
+                charSheet.skillPoints -= 1;
+                break;
+            case "quickshotA1":
+                charSheet.charSkills[7] = 0;
                 charSheet.skillPoints += 1;
                 break;
         }
