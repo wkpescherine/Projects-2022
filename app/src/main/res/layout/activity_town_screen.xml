@@ -12,6 +12,18 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Tavern"
+        android:layout_gravity="center"
+        android:onClick="clickATavern"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alchemist"
+        android:layout_gravity="center"
+        android:onClick="clickAlchemist"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Forge"
         android:layout_gravity="center"
         android:onClick="clickForge"/>
