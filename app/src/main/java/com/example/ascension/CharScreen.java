@@ -50,7 +50,7 @@ public class CharScreen extends AppCompatActivity {
         //The following are the setting of the text
         nameText.setText(chSheet.name);
         profText.setText("Lvl "+chSheet.level+" "+chSheet.style+" "+chSheet.race+" "+chSheet.prof);
-        strText.setText("STR: " +chSheet.strength);
+        strText.setText("STR: " +chSheet.strength+" + "+chSheet.strengthBonus);
         intText.setText("INT: " +chSheet.intelligence);
         pieText.setText("PIE: " +chSheet.piety);
         psiText.setText("PSI: " +chSheet.psionic);

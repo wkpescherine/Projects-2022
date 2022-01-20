@@ -29,6 +29,7 @@ public class CharSheet {
     static String mainHand = "";
     static int [] mainHandValues = {0,0};
     static String offHand = "";
+    static int [] offHandValues = {0,0,0};
     static String helmOn = "";
     static String chestOn = "";
     static String legsOn = "";
@@ -52,7 +53,7 @@ public class CharSheet {
         for(int b = 0; b < stat; b++){
             if(b+bonusValue <= stat ){
                 bonusValue = b;
-            } else { b = 100000;}
+            } //else { b = 100000;}
         }
         return bonusValue;
     }
