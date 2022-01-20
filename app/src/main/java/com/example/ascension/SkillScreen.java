@@ -23,6 +23,7 @@ public class SkillScreen extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
+
         setStats();
     }
 
@@ -116,6 +117,8 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void setStats(){
+        int [] nullify = {0,0,0,0,0,0,0};
+        config.charSkills = nullify;
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
