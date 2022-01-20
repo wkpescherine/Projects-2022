@@ -27,6 +27,7 @@ public class CreateCharacter extends AppCompatActivity {
         String selectStyle = t1.getText().toString();
         TextView styleText = findViewById(R.id.charStyleHolder);
         config.updateStyle(selectStyle);
+        charSheet.style = selectStyle;
         styleText.setText(selectStyle);
         setStats();
     }
@@ -36,6 +37,7 @@ public class CreateCharacter extends AppCompatActivity {
         String selectRace = t2.getText().toString();
         TextView raceText = findViewById(R.id.charRaceHolder);
         config.updateRace(selectRace);
+        charSheet.race = selectRace;
         raceText.setText(selectRace);
         setStats();
     }
@@ -45,6 +47,7 @@ public class CreateCharacter extends AppCompatActivity {
         String selectClass = t3.getText().toString();
         TextView classText = findViewById(R.id.charClassHolder);
         config.updateClass(selectClass);
+        charSheet.prof = selectClass;
         classText.setText(selectClass);
         setStats();
     }
@@ -81,15 +84,15 @@ public class CreateCharacter extends AppCompatActivity {
         TextView spdText = findViewById(R.id.speed);
         TextView hpText = findViewById(R.id.hp);
         TextView powText = findViewById(R.id.pow);
-        //stats array def -str int, pie, qui, dex, con
-        strText.setText("STR: " + charSheet.strength +" + "+ charSheet.strengthBonus);
-        intText.setText("INT: " + charSheet.intelligence +" + "+ charSheet.intelligenceBonus);
-        pieText.setText("PIE: " + charSheet.piety +" + "+ charSheet.pietyBonus);
-        psiText.setText("PSI: " + charSheet.psionic +" + "+ charSheet.psionicBonus);
-        dexText.setText("DEX: " + charSheet.dexterity +" + "+ charSheet.dexterityBonus);
-        quiText.setText("QUI: " + charSheet.quickness +" + "+ charSheet.quicknessBonus);
-        conText.setText("CON: " + charSheet.constitution +" + "+ charSheet.constitutionBonus);
-        staText.setText("STA: " + charSheet.stamina);
+        //stats array def -str int, pie, psi, qui, dex, con,sta
+        strText.setText("STR: " + config.charStats[0] +" + "+ config.charBonus[0]);
+        intText.setText("INT: " + config.charStats[1] +" + "+ config.charBonus[1]);
+        pieText.setText("PIE: " + config.charStats[2] +" + "+ config.charBonus[2]);
+        psiText.setText("PSI: " + config.charStats[3] +" + "+ config.charBonus[3]);
+        dexText.setText("DEX: " + config.charStats[4] +" + "+ config.charBonus[4]);
+        quiText.setText("QUI: " + config.charStats[5] +" + "+ config.charBonus[5]);
+        conText.setText("CON: " + config.charStats[6] +" + "+ config.charBonus[6]);
+        staText.setText("STA: " + config.charStats[7]);
         hpText.setText("HP: " + charSheet.hp);
         powText.setText("POW: " +charSheet.power);
         // stats array def - toHit, Dodge, AF, SPD
