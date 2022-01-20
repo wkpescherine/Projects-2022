@@ -54,7 +54,7 @@ public class SkillHandler {
                 charSheet.skillPoints += 1;
                 break;
             case "stealthU1":
-                charSheet.charSkills[6] = 0;
+                charSheet.charSkills[6] = 1;
                 charSheet.skillPoints -= 1;
                 break;
             case "stealthA1":
@@ -62,7 +62,7 @@ public class SkillHandler {
                 charSheet.skillPoints += 1;
                 break;
             case "quickshotU1":
-                charSheet.charSkills[7] = 0;
+                charSheet.charSkills[7] = 1;
                 charSheet.skillPoints -= 1;
                 break;
             case "quickshotA1":
