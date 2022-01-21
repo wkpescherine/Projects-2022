@@ -62,7 +62,7 @@ public class CreateCharacter extends AppCompatActivity {
         EditText nameChar = findViewById(R.id.editName);
         config.charName = nameChar.getText().toString();
         if(config.charName.length() != 0 && config.charStyle.length() != 0 && config.charRace.length() != 0 && config.charClass.length() != 0){
-            charSheet.setMainStats(config.charStats);
+            charSheet.setMainStats(config.charStats, config.combatStats);
             Intent intent2 = new Intent(this, SkillScreen.class);
             startActivity(intent2);
         }
