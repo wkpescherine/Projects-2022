@@ -57,9 +57,9 @@ public class CharDataConfig {
     int [] classFlayer      = {0,4,0,6,0,2,0,20,1,12,20};
     int [] classSlither     = {2,3,0,0,2,3,2,25,1,15,10};
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
-    static int charStats [] = {0,0,0,0,0,0,0,0,0,0,0};
+    static int [] charStats   = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, psi, dex, qui, con, sta
-    static int []charBonus = {0,0,0,0,0,0,0,0};
+    static int [] charBonus   = {0,0,0,0,0,0,0,0};
     // stats array def - toHit, Dodge, AF, Res, SPD
     static int [] combatStats = {0,0,0,0,0};
     //Main, Off, helm, chest, legs, boots, shoulders, arms, gloves, back
@@ -208,6 +208,7 @@ public class CharDataConfig {
         statsBonus();
         charStats[9] = classStats[9]+ charBonus[6];
         charStats[10] = styleStats[10]+ charBonus[1];
+        setCombatStats();
     }
 
     public void statsBonus(){

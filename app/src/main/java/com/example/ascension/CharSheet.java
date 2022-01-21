@@ -67,6 +67,8 @@ public class CharSheet {
         quickness += stats[5];
         constitution += stats[6];
         stamina += stats[7];
+        hp += stats[9];
+        power += stats[10];
     }
 
     public void updateCharSheet(){

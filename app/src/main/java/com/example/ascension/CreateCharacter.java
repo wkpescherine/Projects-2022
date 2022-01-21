@@ -93,13 +93,13 @@ public class CreateCharacter extends AppCompatActivity {
         quiText.setText("QUI: " + config.charStats[5] +" + "+ config.charBonus[5]);
         conText.setText("CON: " + config.charStats[6] +" + "+ config.charBonus[6]);
         staText.setText("STA: " + config.charStats[7]);
-        hpText.setText("HP: " + charSheet.hp);
+        hpText.setText("HP: "   + charSheet.hp);
         powText.setText("POW: " +charSheet.power);
         // stats array def - toHit, Dodge, AF, SPD
-        toHitText.setText("toHit: "+ (charSheet.toHit));
-        dodgeText.setText("Dodge: "+ charSheet.dexterityBonus);
-        afText.setText("AF: " + charSheet.AF);
-        resText.setText("RES: " + charSheet.resistance);
-        spdText.setText("SPD: "+ charSheet.quicknessBonus);
+        toHitText.setText("toHit: "+ config.combatStats[0]);
+        dodgeText.setText("Dodge: "+ config.combatStats[1]);
+        afText.setText("AF: "      + config.combatStats[3]);
+        resText.setText("RES: "    + config.combatStats[3]);
+        spdText.setText("SPD: "    + config.combatStats[4]);
     }
 }
