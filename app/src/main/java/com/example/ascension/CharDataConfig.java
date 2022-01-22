@@ -16,18 +16,18 @@ public class CharDataConfig {
     int [] classStats    = {0,0,0,0,0,0,0,0,0,0,0};
     //Styles 12 points
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
-    int [] styleSavage   = {6,0,0,0,2,3,1,0,0,0,0};
-    int [] styleDiabolic = {0,5,0,0,2,4,1,0,0,0,0};
-    int [] styleDivine   = {0,0,6,0,1,3,2,0,0,0,0};
-    int [] styleStout    = {0,0,2,0,2,2,6,0,0,0,0};
-    int [] styleDemonic  = {0,4,0,0,2,2,4,0,0,0,0};
-    int [] stylePure     = {0,0,8,0,0,0,4,0,0,0,0};
-    int [] styleAgile    = {2,0,0,0,6,4,0,0,0,0,0};
-    int [] stylePsionic  = {0,3,0,9,0,0,0,0,0,0,0};
-    int [] styleFallen   = {4,0,3,0,1,2,2,0,0,0,0};
-    int [] styleWise     = {0,8,1,3,0,0,0,0,0,0,0};
-    int [] styleDeadly   = {3,0,0,0,7,2,0,0,0,0,0};
-    int [] styleVirtuous = {2,0,4,0,3,1,2,0,0,0,0};
+    int [] styleSavage   = {9,0,0,0,3,3,3,0,0,0,0};
+    int [] styleDiabolic = {0,9,0,0,3,5,1,0,0,0,0};
+    int [] styleDivine   = {0,0,9,0,2,5,2,0,0,0,0};
+    int [] styleStout    = {0,0,4,0,3,3,8,0,0,0,0};
+    int [] styleDemonic  = {0,6,0,0,3,3,6,0,0,0,0};
+    int [] stylePure     = {0,0,9,0,2,1,6,0,0,0,0};
+    int [] styleAgile    = {3,0,0,0,9,6,0,0,0,0,0};
+    int [] stylePsionic  = {0,5,0,13,0,0,0,0,0,0,0};
+    int [] styleFallen   = {6,0,5,0,2,2,3,0,0,0,0};
+    int [] styleWise     = {0,9,4,5,0,0,0,0,0,0,0};
+    int [] styleDeadly   = {5,0,0,0,9,4,0,0,0,0,0};
+    int [] styleVirtuous = {3,0,6,0,3,1,5,0,0,0,0};
     //Race 18 points
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
     int [] raceHuman     = {3,3,3,0,3,3,3,25,0,0,0};
@@ -44,18 +44,18 @@ public class CharDataConfig {
     int [] raceGiant     = {9,1,1,0,1,1,5,20,0,0,0};
     //class 12 points
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
-    int [] classWarrior     = {4,0,0,0,2,2,4,30,1,20,0};
-    int [] classMage        = {0,6,2,0,0,4,0,20,1,8,20};
-    int [] classThief       = {2,0,0,0,5,3,2,25,1,12,0};
-    int [] classBerzerker   = {8,0,0,0,2,2,0,30,1,16,0};
-    int [] classPriest      = {0,0,7,0,1,3,2,20,1,10,15};
-    int [] classRanger      = {3,0,1,0,4,4,0,25,1,14,0};
-    int [] classJuggernaut  = {8,0,0,0,1,1,2,30,1,24,0};
-    int [] classMindweaver  = {0,3,0,8,0,1,0,20,1,12,15};
-    int [] classShadow      = {3,1,0,1,3,3,1,25,1,10,10};
-    int [] classPaladin     = {3,0,3,0,2,1,3,30,1,25,8};
-    int [] classFlayer      = {0,4,0,6,0,2,0,20,1,12,20};
-    int [] classSlither     = {2,3,0,0,2,3,2,25,1,15,10};
+    int [] classWarrior     = {6,0,0,0,3,3,6,30,1,20,0};
+    int [] classMage        = {0,10,3,0,0,5,0,20,1,8,20};
+    int [] classThief       = {3,0,0,0,7,6,2,25,1,12,0};
+    int [] classBerzerker   = {8,0,0,0,5,5,0,30,1,16,0};
+    int [] classPriest      = {0,0,10,0,2,3,3,20,1,10,15};
+    int [] classRanger      = {4,2,2,0,4,6,0,25,1,14,0};
+    int [] classJuggernaut  = {12,0,0,0,1,1,4,30,1,24,0};
+    int [] classMindweaver  = {0,4,0,12,0,2,0,20,1,12,15};
+    int [] classShadow      = {3,2,0,3,5,4,1,25,1,10,10};
+    int [] classPaladin     = {4,0,4,0,3,1,4,30,1,25,8};
+    int [] classFlayer      = {2,4,0,6,3,3,0,20,1,12,20};
+    int [] classSlither     = {4,3,0,0,4,5,2,25,1,15,10};
     //stats array def -str int, pie, psi, dex, qiu, con, sta, lvl, hp ,pow
     static int [] charStats   = {0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, psi, dex, qui, con, sta
