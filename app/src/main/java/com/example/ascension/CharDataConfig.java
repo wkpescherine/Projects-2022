@@ -205,22 +205,22 @@ public class CharDataConfig {
         charStats[6] = styleStats[6]+raceStats[6]+classStats[6];
         charStats[7] = styleStats[7]+raceStats[7]+classStats[7];
         charStats[8] = classStats[8];
+        statsBonus();
         charStats[9] = classStats[9]+ charBonus[6];
         charStats[10] = styleStats[10]+ charBonus[1];
-        statsBonus();
         setCombatStats();
     }
 
     public void statsBonus(){
-        int [] resetValues = {0,0,0,0,0,0,0,0};
-        charBonus = resetValues;
         for(int a = 0; a < 7; a++){
             int testValue = 0;
-            for(int b = 0; b < charStats[a]; b++){
+            int bonusLvl = 0;
+            for(int b = 1; b < charStats[a]; b++ ){
                 if((b+testValue) <= charStats[a] ){
-                    testValue = b+testValue;
+                    bonusLvl = b;
+                    testValue += bonusLvl;
                 } else {
-                    charBonus[a] = b -1;
+                    charBonus[a] = bonusLvl;
                 }
             }
         }
