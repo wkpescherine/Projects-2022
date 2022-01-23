@@ -221,7 +221,6 @@ public class CharDataConfig {
             }
             charBonus[a] = bonusValue;
         }
-        setCombatStats();
     }
 
     public void setCombatStats(){
