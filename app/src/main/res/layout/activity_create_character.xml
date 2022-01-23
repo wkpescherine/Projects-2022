@@ -444,8 +444,132 @@
         android:layout_height="2dp"
         android:background="#fff"/>
 
-    <include layout="@layout/mini_char_panel"/>
-    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/row4_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/str"
+                android:textColor="#fff"
+                android:text="STR: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/dex"
+                android:textColor="#fff"
+                android:text="DEX: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/con"
+                android:textColor="#fff"
+                android:text="CON: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/sta"
+                android:textColor="#fff"
+                android:text="STA: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/hp"
+                android:textColor="#fff"
+                android:text="HP: 0">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/intel"
+                android:textColor="#fff"
+                android:text="INT: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/pie"
+                android:textColor="#fff"
+                android:text="PIE: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/psi"
+                android:textColor="#fff"
+                android:text="PSI: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/qui"
+                android:textColor="#fff"
+                android:text="QUI: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/pow"
+                android:textColor="#fff"
+                android:text="POW: 0">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/toHit"
+                android:textColor="#fff"
+                android:text="toHit: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/dodge"
+                android:textColor="#fff"
+                android:text="Dodge: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/armor"
+                android:textColor="#fff"
+                android:text="AF: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/res"
+                android:textColor="#fff"
+                android:text="RES: 0">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/speed"
+                android:textColor="#fff"
+                android:text="SPD: 0">
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
