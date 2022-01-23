@@ -212,14 +212,17 @@ public class CharDataConfig {
     }
 
     public void statsBonus(){
+        int [] resetValues = {0,0,0,0,0,0,0,0};
+        charBonus = resetValues;
         for(int a = 0; a < 7; a++){
-            int bonusValue = 0;
+            int testValue = 0;
             for(int b = 0; b < charStats[a]; b++){
-                if(b+bonusValue <= charStats[a] ){
-                    bonusValue = b;
+                if((b+testValue) <= charStats[a] ){
+                    testValue = b+testValue;
+                } else {
+                    charBonus[a] = b -1;
                 }
             }
-            charBonus[a] = bonusValue;
         }
     }
 
