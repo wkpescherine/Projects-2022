@@ -104,7 +104,6 @@ public class CharDataConfig {
             styleStats = styleVirtuous;
         }
         statsTotal();
-        statsBonus();
     }
 
     public void updateRace( String choice){
@@ -146,7 +145,6 @@ public class CharDataConfig {
             raceStats = raceGiant;
         }
         statsTotal();
-        statsBonus();
     }
 
     public void updateClass( String choice){
@@ -188,7 +186,6 @@ public class CharDataConfig {
             classStats = classSlither;
         }
         statsTotal();
-        statsBonus();
     }
 
     public void resetUI(){
@@ -210,6 +207,7 @@ public class CharDataConfig {
         charStats[8] = classStats[8];
         charStats[9] = classStats[9]+ charBonus[6];
         charStats[10] = styleStats[10]+ charBonus[1];
+        statsBonus();
         setCombatStats();
     }
 
@@ -217,7 +215,7 @@ public class CharDataConfig {
         for(int a = 0; a < 7; a++){
             int bonusValue = 0;
             for(int b = 0; b < charStats[a]; b++){
-                if((b+bonusValue) <= charStats[a] ){
+                if(b+bonusValue <= charStats[a] ){
                     bonusValue = b;
                 }
             }
