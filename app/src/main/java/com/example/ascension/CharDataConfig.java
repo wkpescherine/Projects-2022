@@ -217,7 +217,7 @@ public class CharDataConfig {
             for(int b = 0; b < charStats[a]; b++){
                 if(b+bonusValue <= charStats[a] ){
                     bonusValue = b;
-                } else { b = 100000;}
+                }
             }
             charBonus[a] = bonusValue;
         }
@@ -229,7 +229,7 @@ public class CharDataConfig {
         // combatStats = {0,0,0,0,0};
         combatStats[0] = charBonus[4]+10;
         combatStats[1] = charBonus[4]+charBonus[5];
-        combatStats[2] = charBonus[3];
+        combatStats[2] = 0;
         combatStats[3] = charBonus[1];
         combatStats[4] = charBonus[5];
     }
