@@ -456,35 +456,35 @@
                 android:layout_width="72dp"
                 android:id="@+id/str"
                 android:textColor="#fff"
-                android:text="STR: 0">
+                android:text="STR:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
-                android:id="@+id/dex"
+                android:id="@+id/intel"
                 android:textColor="#fff"
-                android:text="DEX: 0">
+                android:text="INT:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
-                android:id="@+id/con"
+                android:id="@+id/pie"
                 android:textColor="#fff"
-                android:text="CON: 0">
+                android:text="PIE:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
-                android:id="@+id/sta"
+                android:id="@+id/psi"
                 android:textColor="#fff"
-                android:text="STA: 0">
+                android:text="PSI:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/hp"
                 android:textColor="#fff"
-                android:text="HP: 0">
+                android:text="HP:">
             </TextView>
         </TableRow>
         <TableRow
@@ -494,37 +494,37 @@
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
-                android:id="@+id/intel"
+                android:id="@+id/dex"
                 android:textColor="#fff"
-                android:text="INT: 0">
-            </TextView>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="72dp"
-                android:id="@+id/pie"
-                android:textColor="#fff"
-                android:text="PIE: 0">
-            </TextView>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="72dp"
-                android:id="@+id/psi"
-                android:textColor="#fff"
-                android:text="PSI: 0">
+                android:text="DEX:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/qui"
                 android:textColor="#fff"
-                android:text="QUI: 0">
+                android:text="QUI:">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/con"
+                android:textColor="#fff"
+                android:text="CON:">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:id="@+id/sta"
+                android:textColor="#fff"
+                android:text="STA:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/pow"
                 android:textColor="#fff"
-                android:text="POW: 0">
+                android:text="POW:">
             </TextView>
         </TableRow>
         <TableRow
@@ -536,35 +536,35 @@
                 android:layout_width="72dp"
                 android:id="@+id/toHit"
                 android:textColor="#fff"
-                android:text="toHit: 0">
+                android:text="toHit:">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/dodge"
                 android:textColor="#fff"
-                android:text="Dodge: 0">
+                android:text="Dodge: ">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/armor"
                 android:textColor="#fff"
-                android:text="AF: 0">
+                android:text="AF: ">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/res"
                 android:textColor="#fff"
-                android:text="RES: 0">
+                android:text="RES: ">
             </TextView>
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="72dp"
                 android:id="@+id/speed"
                 android:textColor="#fff"
-                android:text="SPD: 0">
+                android:text="SPD:">
             </TextView>
         </TableRow>
 

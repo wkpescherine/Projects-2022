@@ -20,6 +20,8 @@ public class CreateCharacter extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+
+        setStats();
     }
 
     public void handleStyle(View v){
