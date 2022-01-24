@@ -214,15 +214,12 @@ public class CharDataConfig {
     public void statsBonus(){
         for(int a = 0; a < 7; a++){
             int testValue = 0;
-            int bonusLvl = 0;
-            for(int b = 1; b < charStats[a]; b++ ){
-                if((b+testValue) <= charStats[a] ){
-                    bonusLvl = b;
-                    testValue += bonusLvl;
-                } else {
-                    charBonus[a] = bonusLvl;
-                }
+            int bonusLvl = 1;
+            for(int b = 1; testValue < charStats[a]; b++ ){
+                testValue += bonusLvl;
+                bonusLvl +=1;
             }
+            charBonus[a] = bonusLvl;
         }
     }
 
