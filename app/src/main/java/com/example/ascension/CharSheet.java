@@ -50,11 +50,13 @@ public class CharSheet {
     static int resistance = 0;
 
     public int updateCharBonus(int stat){
+        int testScore = 0;
         int bonusValue = 0;
-        for(int b = 0; b < stat; b++){
-            if(b+bonusValue <= stat ){
-                bonusValue = b;
-            } //else { b = 100000;}
+        for(int x = 0; testScore <= stat; x++){
+            testScore = x + bonusValue;
+            if(testScore <= stat ){
+                bonusValue = x;
+            }
         }
         return bonusValue;
     }
