@@ -29,6 +29,7 @@ public class CharSheet {
     static String mainHand = "";
     static int [] mainHandValues = {0,0};
     static String offHand = "";
+    static int [] offHandValues = {0,0,0};
     static String helmOn = "";
     static String chestOn = "";
     static String legsOn = "";
@@ -44,20 +45,24 @@ public class CharSheet {
     static int dodge = 0;
     static int AF = 0;
     static int damage = 0;
+    static int speed = 0;
     static int AFReduce = 0;
     static int resistance = 0;
 
     public int updateCharBonus(int stat){
+        int testScore = 0;
         int bonusValue = 0;
-        for(int b = 0; b < stat; b++){
-            if(b+bonusValue <= stat ){
-                bonusValue = b;
-            } else { b = 100000;}
+        for(int x = 0; testScore <= stat; x++){
+            testScore = x + bonusValue;
+            if(testScore <= stat ){
+                bonusValue = x;
+            }
         }
         return bonusValue;
     }
 
-    public void setMainStats(int [] stats){
+    public void setMainStats(int [] stats, int [] combat){
+        //Set base main char stats
         strength += stats[0];
         intelligence += stats[1];
         piety += stats[2];
@@ -66,6 +71,14 @@ public class CharSheet {
         quickness += stats[5];
         constitution += stats[6];
         stamina += stats[7];
+        hp += stats[9];
+        power += stats[10];
+        //set combat char sheet stats
+        toHit += combat[0];
+        dodge += combat[1];
+        AF += combat[2];
+        resistance += combat[3];
+        speed += combat[4];
     }
 
     public void updateCharSheet(){
