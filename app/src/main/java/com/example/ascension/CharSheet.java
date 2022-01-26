@@ -50,15 +50,17 @@ public class CharSheet {
     static int resistance = 0;
 
     public int updateCharBonus(int stat){
-        int testScore = 0;
-        int bonusValue = 0;
-        for(int x = 0; testScore <= stat; x++){
-            testScore = x + bonusValue;
-            if(testScore <= stat ){
-                bonusValue = x;
+        for(int a = 0; a < stat; a++){
+            int testScore = 0;
+            int bonusLvl = 0;
+            for(int y =0; y < stat; y++){
+                testScore += y;
+                if(testScore+y < stat){
+                    bonusLvl += 1;
+                }
             }
+            return bonusLvl;
         }
-        return bonusValue;
     }
 
     public void setMainStats(int [] stats, int [] combat){

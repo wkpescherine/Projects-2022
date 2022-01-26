@@ -53,10 +53,10 @@ public class CharScreen extends AppCompatActivity {
         strText.setText("STR: " +chSheet.strength+" + "+chSheet.strengthBonus);
         intText.setText("INT: " +chSheet.intelligence+" + "+chSheet.intelligenceBonus);
         pieText.setText("PIE: " +chSheet.piety+" + "+chSheet.pietyBonus);
-        psiText.setText("PSI: " +chSheet.psionic);
-        dexText.setText("DEX: " +chSheet.dexterity);
-        quiText.setText("QUI: " +chSheet.quickness);
-        conText.setText("CON: " +chSheet.constitution);
+        psiText.setText("PSI: " +chSheet.psionic+" + "+chSheet.psionicBonus);
+        dexText.setText("DEX: " +chSheet.dexterity+" + "+chSheet.dexterityBonus);
+        quiText.setText("QUI: " +chSheet.quickness+" + "+chSheet.quicknessBonus);
+        conText.setText("CON: " +chSheet.constitution+" + "+chSheet.constitutionBonus);
         staText.setText("STA: " +chSheet.stamina);
         hpText.setText("HP: " +chSheet.hp);
         powText.setText("POW: " +chSheet.power);
