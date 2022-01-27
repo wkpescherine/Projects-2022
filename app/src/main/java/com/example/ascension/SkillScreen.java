@@ -50,7 +50,7 @@ public class SkillScreen extends AppCompatActivity {
         TextView skill014 = findViewById(R.id.stealthA1);
         TextView skill015 = findViewById(R.id.quickshotU1);
         TextView skill016 = findViewById(R.id.quickshotA1);
-        if(config.charSkills[0] == 0 && config.charStats[0] >= 5) {
+        if(config.charSkills[0] == 0 && (config.charStats[0] >= 10 || config.charClass.equals("Warrior"))) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
         }
@@ -58,7 +58,7 @@ public class SkillScreen extends AppCompatActivity {
             skill001.setVisibility(View.GONE);
             skill002.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[1] == 0 && config.charStats[1] >= 5) {
+        if(config.charSkills[1] == 0 && (config.charStats[1] >= 10 || config.charClass.equals("Mage"))) {
             skill003.setVisibility(View.VISIBLE);
             skill004.setVisibility(View.GONE);
         }
