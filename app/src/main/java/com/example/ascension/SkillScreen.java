@@ -50,6 +50,10 @@ public class SkillScreen extends AppCompatActivity {
         TextView skill014 = findViewById(R.id.stealthA1);
         TextView skill015 = findViewById(R.id.quickshotU1);
         TextView skill016 = findViewById(R.id.quickshotA1);
+        TextView skill017 = findViewById(R.id.maulU1);
+        TextView skill018 = findViewById(R.id.maulA1);
+        TextView skill019 = findViewById(R.id.smiteU1);
+        TextView skill020 = findViewById(R.id.smiteA1);
         if(config.charSkills[0] == 0 && (config.charStats[0] >= 10 || config.charClass.equals("Warrior"))) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
@@ -113,6 +117,22 @@ public class SkillScreen extends AppCompatActivity {
         if (config.charSkills[7] == 1){
             skill015.setVisibility(View.GONE);
             skill016.setVisibility(View.VISIBLE);
+        }
+        if(config.charSkills[8] == 0 && (config.charClass.equals("Juggernaut"))) {
+            skill017.setVisibility(View.VISIBLE);
+            skill018.setVisibility(View.GONE);
+        }
+        if (config.charSkills[8] == 1){
+            skill017.setVisibility(View.GONE);
+            skill018.setVisibility(View.VISIBLE);
+        }
+        if(config.charSkills[9] == 0 && (config.charClass.equals("Paladin"))) {
+            skill019.setVisibility(View.VISIBLE);
+            skill020.setVisibility(View.GONE);
+        }
+        if (config.charSkills[9] == 1){
+            skill019.setVisibility(View.GONE);
+            skill020.setVisibility(View.VISIBLE);
         }
     }
 

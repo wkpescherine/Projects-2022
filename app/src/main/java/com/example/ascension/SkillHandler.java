@@ -65,8 +65,20 @@ public class SkillHandler {
                 charSheet.charSkills[7] = 1;
                 charSheet.skillPoints -= 1;
                 break;
-            case "quickshotA1":
-                charSheet.charSkills[7] = 0;
+            case "maulA1":
+                charSheet.charSkills[8] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "maulU1":
+                charSheet.charSkills[8] = 1;
+                charSheet.skillPoints += 1;
+                break;
+            case "smiteA1":
+                charSheet.charSkills[9] = 0;
+                charSheet.skillPoints += 1;
+                break;
+            case "smiteU1":
+                charSheet.charSkills[9] = 1;
                 charSheet.skillPoints += 1;
                 break;
         }
