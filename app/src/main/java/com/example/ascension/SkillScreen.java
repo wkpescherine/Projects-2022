@@ -102,7 +102,7 @@ public class SkillScreen extends AppCompatActivity {
             skill011.setVisibility(View.GONE);
             skill012.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[6] == 0 && (config.charClass.equals("Thief") || config.charClass.equals("Slither"))) {
+        if(config.charSkills[6] == 0 && (config.charClass.equals("Thief") || config.charClass.equals("Slither") || config.charClass.equals("Shadow"))) {
             skill013.setVisibility(View.VISIBLE);
             skill014.setVisibility(View.GONE);
         }
