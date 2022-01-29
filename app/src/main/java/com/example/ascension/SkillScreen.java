@@ -31,6 +31,7 @@ public class SkillScreen extends AppCompatActivity {
         String skillSelected = getResources().getResourceEntryName(v.getId());
         skills.SkillList(skillSelected);
         displaySkills();
+        setStats();
     }
 
     public void displaySkills(){
