@@ -23,7 +23,6 @@ public class SkillScreen extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-
         setStats();
     }
 
