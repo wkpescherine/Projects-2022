@@ -1,2 +1,11 @@
-00001 - Have to balance stats across all SRC to be 18 pts
-00002 - Need to udjust text size on mini stats panel 
+00001   - CharDataConfig: balance stats across all SRC to be 18 pts
+00002   - UI: pull out mini stats panel and make it the same for all screens
+00002.1 - UI:  udjust text size on mini stats panel
+00002.2 - UI:  adjust layout of mini panel as well as add in a;; fields
+00003   - Dungeon: start building our the map and functionality
+00003.1 - Dungeon: fix movement of the character on the map
+00003.2 - Dungeon: add map to UI background as well as some basice logic
+00004   - Character: start building out the char Scren UI
+00004.1 - Character: split out the sstats to a side panel
+00004.2 - Character: add the character and gear management/pack
+00005   - Town: Start to look to add graphics to the Town Screen so as to start building that out
