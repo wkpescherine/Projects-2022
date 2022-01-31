@@ -118,19 +118,19 @@ public class SkillScreen extends AppCompatActivity {
             skill015.setVisibility(View.GONE);
             skill016.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[8] == 0 && (config.charClass.equals("Juggernaut"))) {
+        if(config.skillLevels[8] == 0 && (config.charClass.equals("Juggernaut"))) {
             skill017.setVisibility(View.VISIBLE);
             skill018.setVisibility(View.GONE);
         }
-        if (config.charSkills[8] == 1){
+        if (config.skillLevels[8] == 1){
             skill017.setVisibility(View.GONE);
             skill018.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[9] == 0 && (config.charClass.equals("Paladin"))) {
+        if(config.skillLevels[9] == 0 && (config.charClass.equals("Paladin"))) {
             skill019.setVisibility(View.VISIBLE);
             skill020.setVisibility(View.GONE);
         }
-        if (config.charSkills[9] == 1){
+        if (config.skillLevels[9] == 1){
             skill019.setVisibility(View.GONE);
             skill020.setVisibility(View.VISIBLE);
         }

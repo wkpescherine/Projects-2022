@@ -10,6 +10,7 @@ public class CharDataConfig {
     static int skillPoints  = 1;
     //Currently sitting on 10 skills.
     static int [] charSkills = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    static int [] skillLevels = {0,0,0,0,0,0,0,0,0,0,0,0,0};
     //stats array def -str int, pie, psi, qui, dex, con, sta, lvl, hp ,pow
     int [] styleStats    = {0,0,0,0,0,0,0,0,0,0,0};
     int [] raceStats     = {0,0,0,0,0,0,0,0,0,0,0};
