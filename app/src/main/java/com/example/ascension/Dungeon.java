@@ -10,9 +10,12 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 public class Dungeon extends AppCompatActivity {
+    CharSheet chSheet = new CharSheet();
 
-    int xCoord = 125;
-    int yCoord = 225;
+    //currently have a width range of 7
+    //currently have a depth range of 11
+    int xCoord = 0;
+    int yCoord = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,26 +24,40 @@ public class Dungeon extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+
+        startDungeon();
     }
 
     public void moveDown(View v){
-        xCoord -= 50;
-        setSquare();
+        if(xCoord <= 1350){
+            xCoord += 150;
+            chSheet.stamina -= 1;
+            setSquare();
+        }
     }
 
     public void moveUp(View v){
-        xCoord += 50;
-        setSquare();
+        if(xCoord >= 150){
+            xCoord -= 150;
+            chSheet.stamina -= 1;
+            setSquare();
+        }
     }
 
     public void moveLeft(View v){
-        yCoord -= 50;
-        setSquare();
+        if(yCoord>= 150){
+            yCoord -= 150;
+            chSheet.stamina -= 1;
+            setSquare();
+        }
     }
 
     public void moveRight(View v){
-        yCoord += 50;
-        setSquare();
+        if(yCoord<= 750){
+            yCoord += 150;
+            chSheet.stamina -= 1;
+            setSquare();
+        }
     }
 
     public void setSquare(){
@@ -55,4 +72,6 @@ public class Dungeon extends AppCompatActivity {
         Intent intent = new Intent(this, TownScreen.class);
         startActivity(intent);
     }
+
+    public void startDungeon(){}
 }
