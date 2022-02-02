@@ -39,7 +39,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:text="UP"
             android:id="@+id/upbutton"
             android:onClick="moveUp"/>
@@ -51,12 +51,12 @@
             android:layout_toRightOf="@id/upbutton"
             android:onClick="moveDown"
             android:text="D0WN"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:text="LEFT"
             android:layout_below="@id/upbutton"
             android:id="@+id/leftbutton"
@@ -70,7 +70,7 @@
             android:layout_below="@id/downbutton"
             android:onClick="moveRight"
             android:text="RIGHT"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
         <TextView
             android:layout_toRightOf="@id/downbutton"
             android:layout_width="90dp"
@@ -83,7 +83,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Character Sheet"/>
+        android:text="Character Sheet"
+        android:onClick="clickCharSheet"/>
 
     <Button
         android:layout_width="match_parent"

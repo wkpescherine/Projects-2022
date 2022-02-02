@@ -74,4 +74,8 @@ public class Dungeon extends AppCompatActivity {
     }
 
     public void startDungeon(){}
+
+    public void clickCharSheet(View v){
+
+    }
 }
