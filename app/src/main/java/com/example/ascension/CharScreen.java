@@ -23,6 +23,7 @@ public class CharScreen extends AppCompatActivity {
     public void buildCharSheet(){
         //This sets the char Stats
         TextView nameText = findViewById(R.id.name);
+        TextView xpText = findViewById(R.id.xp);
         TextView profText = findViewById(R.id.profession);
         TextView strText = findViewById(R.id.strength);
         TextView intText = findViewById(R.id.intelligence);
@@ -49,6 +50,7 @@ public class CharScreen extends AppCompatActivity {
         TextView gearBoots = findViewById(R.id.gear_boots);
         //The following are the setting of the text
         nameText.setText(chSheet.name);
+        xpText.setText("XP: "+chSheet.currentXP+"/"+chSheet.nextLvlXP);
         profText.setText("Lvl "+chSheet.level+" "+chSheet.style+" "+chSheet.race+" "+chSheet.prof);
         strText.setText("STR: " +chSheet.strength+" + "+chSheet.strengthBonus);
         intText.setText("INT: " +chSheet.intelligence+" + "+chSheet.intelligenceBonus);

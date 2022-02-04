@@ -7,7 +7,7 @@ public class CharSheet {
     static String name = "";
     static int level = 1;
     static int currentXP = 0;
-    static int nextLvlXP = 1000;
+    static int nextLvlXP = level*1000;
     static String style = "";
     static String race = "";
     static String prof = "";
@@ -48,6 +48,7 @@ public class CharSheet {
     static int speed = 0;
     static int AFReduce = 0;
     static int resistance = 0;
+    static int [] skillsLVL = {0,0,0,0,0,0,0,0,0,0,0,0,0};
 
     public int updateCharBonus(int stat){
         int testScore = 0;
