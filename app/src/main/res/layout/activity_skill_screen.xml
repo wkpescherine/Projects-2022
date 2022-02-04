@@ -236,6 +236,20 @@
                 android:id="@+id/quickshotU1"
                 android:text="Quick Shot I"
                 android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/maulU1"
+                android:text="Maul I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/smiteU1"
+                android:text="Smite I"
+                android:onClick="skillPicker"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="2dp"
@@ -308,6 +322,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/quickshotA1"
                 android:text="Quick Shot I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/maulA1"
+                android:text="Maul I"
+                android:onClick="skillPicker"/>
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/smiteA1"
+                android:text="Smite I"
                 android:onClick="skillPicker"/>
         </LinearLayout>
 

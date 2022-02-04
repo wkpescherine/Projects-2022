@@ -23,7 +23,6 @@ public class SkillScreen extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-
         setStats();
     }
 
@@ -31,6 +30,7 @@ public class SkillScreen extends AppCompatActivity {
         String skillSelected = getResources().getResourceEntryName(v.getId());
         skills.SkillList(skillSelected);
         displaySkills();
+        setStats();
     }
 
     public void displaySkills(){
@@ -50,75 +50,95 @@ public class SkillScreen extends AppCompatActivity {
         TextView skill014 = findViewById(R.id.stealthA1);
         TextView skill015 = findViewById(R.id.quickshotU1);
         TextView skill016 = findViewById(R.id.quickshotA1);
-        if(config.charSkills[0] == 0 && config.charStats[0] >= 5) {
+        TextView skill017 = findViewById(R.id.maulU1);
+        TextView skill018 = findViewById(R.id.maulA1);
+        TextView skill019 = findViewById(R.id.smiteU1);
+        TextView skill020 = findViewById(R.id.smiteA1);
+        if(config.skillLevels[0] == 0 && (config.charStats[0] >= 10 || config.charClass.equals("Warrior"))) {
             skill001.setVisibility(View.VISIBLE);
             skill002.setVisibility(View.GONE);
         }
-        if(config.charSkills[0] == 1){
+        if(config.skillLevels[0] == 1){
             skill001.setVisibility(View.GONE);
             skill002.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[1] == 0 && config.charStats[1] >= 5) {
+        if(config.skillLevels[1] == 0 && (config.charStats[1] >= 10 || config.charClass.equals("Mage"))) {
             skill003.setVisibility(View.VISIBLE);
             skill004.setVisibility(View.GONE);
         }
-        if (config.charSkills[1] == 1){
+        if (config.skillLevels[1] == 1){
             skill003.setVisibility(View.GONE);
             skill004.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[2] == 0 && config.charClass.equals("MindWeaver")) {
+        if(config.skillLevels[2] == 0 && config.charClass.equals("MindWeaver")) {
             skill005.setVisibility(View.VISIBLE);
             skill006.setVisibility(View.GONE);
         }
-        if(config.charSkills[2] == 1){
+        if(config.skillLevels[2] == 1){
             skill005.setVisibility(View.GONE);
             skill006.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[3] == 0 && config.charClass.equals("Berzerker")) {
+        if(config.skillLevels[3] == 0 && config.charClass.equals("Berzerker")) {
             skill007.setVisibility(View.VISIBLE);
             skill008.setVisibility(View.GONE);
         }
-        if (config.charSkills[3] == 1){
+        if (config.skillLevels[3] == 1){
             skill007.setVisibility(View.GONE);
             skill008.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[4] == 0 && config.charClass.equals("Flayer")) {
+        if(config.skillLevels[4] == 0 && config.charClass.equals("Flayer")) {
             skill009.setVisibility(View.VISIBLE);
             skill010.setVisibility(View.GONE);
         }
-        if (config.charSkills[4] == 1){
+        if (config.skillLevels[4] == 1){
             skill009.setVisibility(View.GONE);
             skill010.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[5] == 0 && config.charClass.equals("Priest")) {
+        if(config.skillLevels[5] == 0 && config.charClass.equals("Priest")) {
             skill011.setVisibility(View.VISIBLE);
             skill012.setVisibility(View.GONE);
         }
-        if (config.charSkills[5] == 1){
+        if (config.skillLevels[5] == 1){
             skill011.setVisibility(View.GONE);
             skill012.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[6] == 0 && (config.charClass.equals("Thief") || config.charClass.equals("Slither"))) {
+        if(config.skillLevels[6] == 0 && (config.charClass.equals("Thief") || config.charClass.equals("Slither") || config.charClass.equals("Shadow"))) {
             skill013.setVisibility(View.VISIBLE);
             skill014.setVisibility(View.GONE);
         }
-        if (config.charSkills[6] == 1){
+        if (config.skillLevels[6] == 1){
             skill013.setVisibility(View.GONE);
             skill014.setVisibility(View.VISIBLE);
         }
-        if(config.charSkills[7] == 0 && (config.charClass.equals("Ranger"))) {
+        if(config.skillLevels[7] == 0 && (config.charClass.equals("Ranger"))) {
             skill015.setVisibility(View.VISIBLE);
             skill016.setVisibility(View.GONE);
         }
-        if (config.charSkills[7] == 1){
+        if (config.skillLevels[7] == 1){
             skill015.setVisibility(View.GONE);
             skill016.setVisibility(View.VISIBLE);
+        }
+        if(config.skillLevels[8] == 0 && (config.charClass.equals("Juggernaut"))) {
+            skill017.setVisibility(View.VISIBLE);
+            skill018.setVisibility(View.GONE);
+        }
+        if (config.skillLevels[8] == 1){
+            skill017.setVisibility(View.GONE);
+            skill018.setVisibility(View.VISIBLE);
+        }
+        if(config.skillLevels[9] == 0 && (config.charClass.equals("Paladin"))) {
+            skill019.setVisibility(View.VISIBLE);
+            skill020.setVisibility(View.GONE);
+        }
+        if (config.skillLevels[9] == 1){
+            skill019.setVisibility(View.GONE);
+            skill020.setVisibility(View.VISIBLE);
         }
     }
 
     public void setStats(){
         int [] nullify = {0,0,0,0,0,0,0,0};
-        config.charSkills = nullify;
+        config.skillLevels = nullify;
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
@@ -163,6 +183,7 @@ public class SkillScreen extends AppCompatActivity {
 
     public void startGame(View v){
         //charSheet.buildCharSheet();
+        gear.starterGear();
         charSheet.updateCharSheet();
         saveChar.writeCharToFile();
         Intent intent2 = new Intent(this, TownScreen.class);

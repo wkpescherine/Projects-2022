@@ -23,6 +23,7 @@ public class CharScreen extends AppCompatActivity {
     public void buildCharSheet(){
         //This sets the char Stats
         TextView nameText = findViewById(R.id.name);
+        TextView xpText = findViewById(R.id.xp);
         TextView profText = findViewById(R.id.profession);
         TextView strText = findViewById(R.id.strength);
         TextView intText = findViewById(R.id.intelligence);
@@ -49,14 +50,15 @@ public class CharScreen extends AppCompatActivity {
         TextView gearBoots = findViewById(R.id.gear_boots);
         //The following are the setting of the text
         nameText.setText(chSheet.name);
+        xpText.setText("XP: "+chSheet.currentXP+"/"+chSheet.nextLvlXP);
         profText.setText("Lvl "+chSheet.level+" "+chSheet.style+" "+chSheet.race+" "+chSheet.prof);
         strText.setText("STR: " +chSheet.strength+" + "+chSheet.strengthBonus);
         intText.setText("INT: " +chSheet.intelligence+" + "+chSheet.intelligenceBonus);
         pieText.setText("PIE: " +chSheet.piety+" + "+chSheet.pietyBonus);
-        psiText.setText("PSI: " +chSheet.psionic);
-        dexText.setText("DEX: " +chSheet.dexterity);
-        quiText.setText("QUI: " +chSheet.quickness);
-        conText.setText("CON: " +chSheet.constitution);
+        psiText.setText("PSI: " +chSheet.psionic+" + "+chSheet.psionicBonus);
+        dexText.setText("DEX: " +chSheet.dexterity+" + "+chSheet.dexterityBonus);
+        quiText.setText("QUI: " +chSheet.quickness+" + "+chSheet.quicknessBonus);
+        conText.setText("CON: " +chSheet.constitution+" + "+chSheet.constitutionBonus);
         staText.setText("STA: " +chSheet.stamina);
         hpText.setText("HP: " +chSheet.hp);
         powText.setText("POW: " +chSheet.power);

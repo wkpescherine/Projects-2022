@@ -7,7 +7,7 @@ public class CharSheet {
     static String name = "";
     static int level = 1;
     static int currentXP = 0;
-    static int nextLvlXP = 1000;
+    static int nextLvlXP = level*1000;
     static String style = "";
     static String race = "";
     static String prof = "";
@@ -48,17 +48,20 @@ public class CharSheet {
     static int speed = 0;
     static int AFReduce = 0;
     static int resistance = 0;
+    static int [] skillsLVL = {0,0,0,0,0,0,0,0,0,0,0,0,0};
 
     public int updateCharBonus(int stat){
         int testScore = 0;
-        int bonusValue = 0;
-        for(int x = 0; testScore <= stat; x++){
-            testScore = x + bonusValue;
-            if(testScore <= stat ){
-                bonusValue = x;
+        int bonusLvl = 0;
+        for(int a = 0; a < stat; a++){
+            for(int y =0; y < stat; y++){
+                testScore += y;
+                if(testScore+y < stat){
+                    bonusLvl += 1;
+                }
             }
         }
-        return bonusValue;
+        return bonusLvl;
     }
 
     public void setMainStats(int [] stats, int [] combat){
