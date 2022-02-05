@@ -2,7 +2,9 @@ package com.example.ascension;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
@@ -81,5 +83,10 @@ public class CharScreen extends AppCompatActivity {
         gearShoulder.setText("Shoulders: " +chSheet.shoulderOn);
         gearArms.setText("Arms: "+chSheet.armsOn);
         gearHands.setText("Hands: "+chSheet.glovesOn);
+    }
+
+    public void ReturnToTown(View v){
+        Intent intent = new Intent(this, TownScreen.class);
+        startActivity(intent);
     }
 }
