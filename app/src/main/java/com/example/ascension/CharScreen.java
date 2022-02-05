@@ -48,6 +48,9 @@ public class CharScreen extends AppCompatActivity {
         TextView gearChest = findViewById(R.id.gear_chest);
         TextView gearLegs = findViewById(R.id.gear_legs);
         TextView gearBoots = findViewById(R.id.gear_boots);
+        TextView gearShoulder = findViewById(R.id.gear_shoulder);
+        TextView gearArms = findViewById(R.id.gear_arms);
+        TextView gearHands = findViewById(R.id.gear_hands);
         //The following are the setting of the text
         nameText.setText(chSheet.name);
         xpText.setText("XP: "+chSheet.currentXP+"/"+chSheet.nextLvlXP);
@@ -75,5 +78,8 @@ public class CharScreen extends AppCompatActivity {
         gearChest.setText("Chest: " + chSheet.chestOn);
         gearLegs.setText("Legs: " + chSheet.legsOn);
         gearBoots.setText("Boots: " + chSheet.bootsOn);
+        gearShoulder.setText("Shoulders: " +chSheet.shoulderOn);
+        gearArms.setText("Arms: "+chSheet.armsOn);
+        gearHands.setText("Hands: "+chSheet.glovesOn);
     }
 }
