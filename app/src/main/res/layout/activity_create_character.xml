@@ -573,7 +573,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click to oiick skills"
+        android:text="click to pick skills"
         android:onClick="loadSkills"/>
     <Button
         android:layout_width="match_parent"
