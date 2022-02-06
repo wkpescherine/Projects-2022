@@ -12,6 +12,20 @@ import android.widget.LinearLayout;
 public class Dungeon extends AppCompatActivity {
     CharSheet chSheet = new CharSheet();
 
+    int [][] mapLayout = {
+            {0,0,0,2,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {2,1,1,1,1,1,2},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,1,0,0,0},
+            {0,0,0,3,0,0,0}
+    };
+    int [] currentLocation = {3,10};
     //currently have a width range of 7
     //currently have a depth range of 11
     int xCoord = 0;
@@ -45,7 +59,7 @@ public class Dungeon extends AppCompatActivity {
     }
 
     public void moveLeft(View v){
-        if(yCoord>= 150){
+        if(yCoord>= 150 && mapLayout[currentLocation[0]][currentLocation[1]-1]!= 0){
             yCoord -= 150;
             chSheet.stamina -= 1;
             setSquare();
@@ -53,7 +67,7 @@ public class Dungeon extends AppCompatActivity {
     }
 
     public void moveRight(View v){
-        if(yCoord<= 750){
+        if(yCoord<= 750 && mapLayout[currentLocation[0]][currentLocation[1]+1]!= 0){
             yCoord += 150;
             chSheet.stamina -= 1;
             setSquare();
@@ -73,7 +87,10 @@ public class Dungeon extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startDungeon(){}
+    public void startDungeon(){
+        xCoord = 150*currentLocation[0];
+        yCoord = 150*currentLocation[1];
+    }
 
     public void clickCharSheet(View v){
 
