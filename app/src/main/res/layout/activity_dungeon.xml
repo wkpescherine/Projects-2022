@@ -9,6 +9,7 @@
     android:orientation="vertical"
     android:background="#000">
 
+    <!-- This is the map section of the UI -->
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="550dp"
@@ -25,6 +26,8 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- This is the controller for the dungeon and char-->
+    <!-- This will also contain so other UI items such as HP and Power-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,13 +37,13 @@
             android:layout_height="90dp"
             android:id="@+id/dungeonHP"
             android:background="#777"
-            android:layout_toLeftOf="@id/upbutton"
             android:text="0"/>
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:text="UP"
+            android:layout_toRightOf="@id/dungeonHP"
             android:id="@+id/upbutton"
             android:onClick="moveUp"/>
 
@@ -58,6 +61,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:text="LEFT"
+            android:layout_toRightOf="@id/dungeonHP"
             android:layout_below="@id/upbutton"
             android:id="@+id/leftbutton"
             android:onClick="moveLeft"/>
@@ -80,16 +84,32 @@
             android:text="0"/>
     </RelativeLayout>
 
-    <Button
+    <!-- This is where the skills will be place for use -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Character Sheet"
-        android:onClick="clickCharSheet"/>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#3a2"
+            />
+    </LinearLayout>
 
-    <Button
+    <!-- This is where char actions are being held-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HOME"
-        android:onClick="returnHome"/>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Character Sheet"
+            android:onClick="clickCharSheet"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:onClick="returnHome"/>
+    </LinearLayout>
 
 </LinearLayout>

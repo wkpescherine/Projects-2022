@@ -137,7 +137,7 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void setStats(){
-        int [] nullify = {0,0,0,0,0,0,0,0};
+        int [] nullify = {0,0,0,0,0,0,0,0,0,0,0,0,0};
         config.skillLevels = nullify;
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
