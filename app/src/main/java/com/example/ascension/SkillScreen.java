@@ -30,7 +30,6 @@ public class SkillScreen extends AppCompatActivity {
         String skillSelected = getResources().getResourceEntryName(v.getId());
         skills.SkillList(skillSelected);
         displaySkills();
-        setStats();
     }
 
     public void displaySkills(){
@@ -137,8 +136,6 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void setStats(){
-        int [] nullify = {0,0,0,0,0,0,0,0,0,0,0,0,0};
-        config.skillLevels = nullify;
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
@@ -191,6 +188,8 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void backToChar(View v){
+        int [] nullify = {0,0,0,0,0,0,0,0,0,0,0,0,0};
+        config.skillLevels = nullify;
         Intent intent1 = new Intent(this, CreateCharacter.class);
         startActivity(intent1);
     }
