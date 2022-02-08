@@ -26,6 +26,8 @@ public class TownScreen extends AppCompatActivity {
 
     public void clickHome(){}
 
+    public void clickDiamondStore(){}
+
     public void clickDungeon(View v){
         Intent intent = new Intent(this, Dungeon.class);
         startActivity(intent);

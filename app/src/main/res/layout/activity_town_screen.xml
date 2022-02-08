@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Tavern"
         android:layout_gravity="center"
-        android:onClick="clickATavern"/>
+        android:onClick="clickTavern"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,5 +45,11 @@
         android:text="Char Sheet"
         android:layout_gravity="center"
         android:onClick="clickCharSheet"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diaomond Store"
+        android:layout_gravity="center"
+        android:onClick="clickDiamondStore"/>
 
 </LinearLayout>

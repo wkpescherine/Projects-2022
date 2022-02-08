@@ -19,18 +19,6 @@ public class CharFileHandler {
     private static final String TAG = "";
     CharDataConfig config = new CharDataConfig();
 
-    public void writeCharToFile(){
-        try{
-            FileWriter myWriter = new FileWriter("SavedGames.txt", true);
-            BufferedWriter bWriter = new BufferedWriter(myWriter);
-            PrintWriter pWriter = new PrintWriter(bWriter);
-            pWriter.write("Test");
-            pWriter.close();
-            System.out.print("Current Game Saved");
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-    }
 
     public void readCharFromFile(){
 
