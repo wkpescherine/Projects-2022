@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -48,25 +51,43 @@ public class LoadCharacter extends AppCompatActivity {
         parent.addView(tv1);
     }
 
-    public void readFromFile() throws IOException {
-        final Resources resources = mHelperContext.getResources();
-        InputStream inputStream = resources.openRawResource(R.raw.definitions);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+    public void readFromFile(){
+        //Find the directory for the SD Card using the API
+        //*Don't* hardcode "/sdcard"
+        File sdcard = Environment.getExternalStorageDirectory();
+
+        //Get the text file
+        File file = new File(sdcard,"mytextfile.txt");
+
+        //Read text from file
+        StringBuilder text = new StringBuilder();
 
         try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
-            while ((line = reader.readLine()) != null) {
-                String[] strings = TextUtils.split(line, "-");
-                if (strings.length < 2)
-                    continue;
-                long id = addWord(strings[0].trim(), strings[1].trim());
-                if (id < 0) {
-                    Log.e(TAG, "unable to add word: " + strings[0].trim());
-                }
+
+            while ((line = br.readLine()) != null) {
+                text.append(line);
+                text.append('\n');
             }
-        } finally {
-            reader.close();
+            br.close();
         }
-        Log.d(TAG, "DONE loading words.");
+        catch (IOException e) {
+            //You'll need to add proper error handling here
+        }
+
+        LinearLayout parent = findViewById(R.id.parent);
+
+        LinearLayout subSection = new LinearLayout(this);
+        subSection.setLayoutParams(new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+        );
+        subSection.setOrientation(LinearLayout.VERTICAL);
+        TextView tv1 = new TextView(this);
+
+        tv1.setText(" This should show something ");
+        parent.addView(tv1);
     }
 }
