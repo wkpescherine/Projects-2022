@@ -3,10 +3,16 @@ package com.example.ascension;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class LoadCharacter extends AppCompatActivity {
     CharDataConfig config = new CharDataConfig();
@@ -22,6 +28,7 @@ public class LoadCharacter extends AppCompatActivity {
 
         for(int a = 0; a< 4; a++){
             buildCharsToLoad();
+            readFromFile();
         }
     }
 
@@ -39,6 +46,27 @@ public class LoadCharacter extends AppCompatActivity {
 
         tv1.setText(" This should show something ");
         parent.addView(tv1);
+    }
 
+    public void readFromFile() throws IOException {
+        final Resources resources = mHelperContext.getResources();
+        InputStream inputStream = resources.openRawResource(R.raw.definitions);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+
+        try {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] strings = TextUtils.split(line, "-");
+                if (strings.length < 2)
+                    continue;
+                long id = addWord(strings[0].trim(), strings[1].trim());
+                if (id < 0) {
+                    Log.e(TAG, "unable to add word: " + strings[0].trim());
+                }
+            }
+        } finally {
+            reader.close();
+        }
+        Log.d(TAG, "DONE loading words.");
     }
 }
