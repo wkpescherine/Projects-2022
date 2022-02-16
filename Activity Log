@@ -1,194 +1,203 @@
-021521
+021622
+   [Unchained - Laptop]
+              Started building base UI
    [  Zero    - Laptop]
               No Updates
    [Ascension - Android]
               No Updates
-021421
+021522
+   [Unchained - Laptop]
+              No Update
    [  Zero    - Laptop]
               No Updates
    [Ascension - Android]
               No Updates
-021321
+021422
    [  Zero    - Laptop]
               No Updates
    [Ascension - Android]
               No Updates
-021221
+021322
    [  Zero    - Laptop]
               No Updates
    [Ascension - Android]
               No Updates
-021121
+021222
    [  Zero    - Laptop]
               No Updates
    [Ascension - Android]
               No Updates
-021021
+021122
+   [  Zero    - Laptop]
+              No Updates
+   [Ascension - Android]
+              No Updates
+021022
    [  Zero    - Laptop]
               Updating Config file to handle across all instances
               Updated UI for the create account section
    [Ascension - Android]
               Updating the read from file
-020921
+020922
    [Ascension - Android]
               Working on reading from file
-020821
+020822
    [Ascension - Android]
               NO UPDATE
-020721
+020722
    [Ascension - Android]
               Update Dungeon movement buttons
               Update Skill screen to hamdle reset on back button
-020621
+020622
    [Ascension - Android]
               Updated Dungeon UI
-020521
+020522
    [Ascension - Android]
               Updated Char Screen with a return to town logic
               Updated Dungeon with skills panel
               Updated DUngeon UI to include HP/POW
               Fixed spelling error
-020421
+020422
    [Ascension - Android]
               Fixed Skills bug
-020321
+020322
    [Ascension - Android]
               Updated Skills Handling
               Update to Char Sheet and Screen
               VERSION UPDATE
-020221
+020222
    [Ascension - Android]
               NO UPDATES
-020121
+020122
    [Ascension - Android]
               Update Dungeon UI
-013121
+013122
    [Ascension - Android]
               Dungeon Map update
               Added UI elements to dungeon map
               Version Update
-013121
+013122
    [Ascension - Android]
               Dungeon Map updates
-013021
+013022
    [Ascension - Android]
               Fixed Skills Bug
               Version Update
-012921
+012922
    [Ascension - Android]
               Working to fix game breaking error
-012821
+012822
    [Ascension - Android]
               Updated Skills sheet, start to add more lv1 skills
               Updated Skills sheet, start to add lv2 skills
               Update to Skills Screen
               Version Update
-012721
+012722
    [Ascension - Android]
               Created Skills Sheet 
               Updated a few skills
-012621
+012622
    [Ascension - Android]
               Update Skills
               Added 2 new skills
-012521
+012522
    [Ascension - Android]
               Fixed Char Stats Bonus for create screen
-012521
+012522
    [Ascension - Android]
               Fixed Char Stats Bonus for create screen
               Update Char Sheet and Char Screen
-012421
+012422
    [Ascension - Android]
               Update to Bonus calculation issue.
 012321
    [Ascension - Android]
               Fixed UI issue on Create Character Screen
-012221
+012222
    [Ascension - Android]
               Fixed UI issue on Create Character Screen
               Version update
-012121
+012122
    [Ascension - Android]
               Update mini char sheet being pulled out to include in all
               Update all stats for SRC to be even (18)
               STARTING TO DO TESTING AND BUG SEARCHING
-012021
+012022
    [Ascension - Android]
               Updated Creation Screen mini char sheet
               STARTING TO DO TESTING AND BUG SEARCHING
-011921
+011922
    [Ascension - Android]
               Updates to char sheet
               Updates to creation scrren
               Version update
               Minor bug fixes on the logic of the creation screen
               STARTING TO DO TESTING AND BUG SEARCHING
-011821
+011822
    [Ascension - Android]
               NO UPDATES
-011721
+011722
    [Ascension - Android]
               Updated Char Screen to include gear
               Added 2 new skills to the skill selection
               Added Tavern and Alchemist to town screen
-011621
+011622
    [Ascension - Android]
               Update to Char Sheet
               Modify logic between Char Sheet and DataConfig file
-011521
+011522
    [Ascension - Android]
               Update to Char Sheet
               Updated Skills Screen and skills 
               Added 2 new skills
-011421
+011422
    [Ascension - Android]
               Updated Char Sheet and logic
               Update Creation sheet
               Updated char sheet handling
-011321
+011322
    [Ascension - Android]
               Updated Gear Builder to be able to randomize items
               Updated to include basic starter gear
               Updating char Sheet to handle gear
-011221
+011222
    [Ascension - Android]
               Updated Gear Builder to include more stats
-011221
+011222
    [Ascension - Android]
               Minor Bug Fixes
-011021
+011022
    [Ascension - Android]
               Updating Gear Builder
               Minor Bug Fixes
-011021
+011022
    [Ascension - Android]
               Added 3 new SRC to Char Create Screen
               Updated some data and functionality for Char Create Screen
-010921
+010922
    [Ascension - Android]
               Added 2 new skills to the skills handler
               Added new skills to the skill screen
               Updated stats on CharData to be more balanced
               Minor data fixes
-010821
+010822
    [Ascension - Android]
               Updated Skill Screen to include the new stats
               Added an Errors Log Tracker to the main file 
               Update Char Screen to include new stats 
               Update Char Sheet to include new stats)
               Minor fixes
-010721
+010722
    [Ascension - Android]
               Updated Char Data with 2 new stats
               Updated Create CHar screen to also handle the 2 newer stats
-010621
+010622
    [Ascension - Android]
               Updated Char Sheet data to handle a few newer issues
               Updated Char Sheet to include gear
               Updated Char Data with 2 new stats
               Fixed Bugs   
-010521
+0105212
    [Ascension - Android]
               Updated Char Screen to start displaying data from creation
               Updated Char Screen data transfer, storage and displaying
