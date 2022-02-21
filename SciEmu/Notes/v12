@@ -1,2 +1,4 @@
 022022 Update to version 12
        Removed Quiz Section
+       Fix logic for numbers and sign
+       Fix rendering issues
