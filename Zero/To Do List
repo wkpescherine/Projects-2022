@@ -1,10 +1,14 @@
-********************************************
-***                                      ***
-***           Zero To DO List            ***
-***                                      ***
-********************************************
-1 - Get all user data to be more available thru the app
-2 - Start to build the logic for the search engine
-3 - Create a Fake DB to test against
-4 - Build out some temp websites
-5 - DATABASE: Start building out a real BootSpring Backend
+***********************************************************************
+***                                                                 ***
+***                         Zero To DO List                         ***
+***                                                                 ***
+***********************************************************************
+1.0 - Start to pull out individual sections into seprate files 
+2.0 - Get all user data to be more available thru the app
+3.0 - Start to build the logic for the search engine
+4.0 - Create a Fake DB to test against
+5.0 - Build out some temp websites
+6.0 - DATABASE: Start building out a real BootSpring Backend
+7.0 = HOME    : Have a better front page section
+8.0 - PARADIGM: Go back over the paradigm docs and review site building
+8.1 - PARADIGM: Review basic functionality of the UI builder
