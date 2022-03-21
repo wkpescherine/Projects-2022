@@ -12,3 +12,4 @@
 7.0 = HOME    : Have a better front page section
 8.0 - PARADIGM: Go back over the paradigm docs and review site building
 8.1 - PARADIGM: Review basic functionality of the UI builder
+9.0 - CREATE ACCOUNT - Need the error message to be created on a new line(currently does not)
