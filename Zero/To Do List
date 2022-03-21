@@ -3,13 +3,18 @@
 ***                         Zero To DO List                         ***
 ***                                                                 ***
 ***********************************************************************
-1.0 - Start to pull out individual sections into seprate files 
-2.0 - Get all user data to be more available thru the app
-3.0 - Start to build the logic for the search engine
-4.0 - Create a Fake DB to test against
-5.0 - Build out some temp websites
-6.0 - DATABASE: Start building out a real BootSpring Backend
-7.0 = HOME    : Have a better front page section
-8.0 - PARADIGM: Go back over the paradigm docs and review site building
-8.1 - PARADIGM: Review basic functionality of the UI builder
-9.0 - CREATE ACCOUNT - Need the error message to be created on a new line(currently does not)
+1.0 - PARADIGM       : Go back over the paradigm docs and review site building
+1.1 - PARADIGM       : Review basic functionality of the UI builder
+2.0 - GENERAL        : Start to pull out individual sections into seprate files 
+3.0 - CONFIG         : Get all user data to be more available thru the app
+4.0 - DATABASE       : Start building out a real BootSpring Backend
+4.1 - DATABASE       : Create a Fake DB to test against
+4.2 - DATABASE       : Build out some temp websites
+5.0 - CREATE ACCOUNT : Need the error message to be created on a new line(currently does not)
+5.1 - CREATE ACCOUNT : Need to add logic for when we have added the DB for new accounts
+5.2 - CREATE ACCOUNT : Need to add logic for when we have added the DB for new accounts, check for dupes
+6.0 - MAIN>HOME      : Start to build the logic for the search engine
+6.1 = MAIN>HOME      : Have a better front page section
+7.0 - MAIN>CHAT      : Build out more chat
+8.0 - MAIN>BANK      : Review currency setuo
+9.0 - MAIN>RETAIL    : Review procedure for retail companies
