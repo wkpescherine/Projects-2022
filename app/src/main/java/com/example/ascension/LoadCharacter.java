@@ -20,7 +20,6 @@ import java.io.InputStreamReader;
 public class LoadCharacter extends AppCompatActivity {
     CharDataConfig config = new CharDataConfig();
     CharFileHandler handleFile = new CharFileHandler();
-    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
