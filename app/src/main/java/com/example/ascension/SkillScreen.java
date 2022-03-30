@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 
 public class SkillScreen extends AppCompatActivity {
     CharDataConfig config = new CharDataConfig();
@@ -30,7 +34,6 @@ public class SkillScreen extends AppCompatActivity {
         String skillSelected = getResources().getResourceEntryName(v.getId());
         skills.SkillList(skillSelected);
         displaySkills();
-        setStats();
     }
 
     public void displaySkills(){
@@ -137,8 +140,6 @@ public class SkillScreen extends AppCompatActivity {
     }
 
     public void setStats(){
-        int [] nullify = {0,0,0,0,0,0,0,0,0,0,0,0,0};
-        config.skillLevels = nullify;
         TextView strText = findViewById(R.id.str);
         TextView dexText = findViewById(R.id.dex);
         TextView conText = findViewById(R.id.con);
@@ -185,13 +186,31 @@ public class SkillScreen extends AppCompatActivity {
         //charSheet.buildCharSheet();
         gear.starterGear();
         charSheet.updateCharSheet();
-        saveChar.writeCharToFile();
+        writeCharToFile();
         Intent intent2 = new Intent(this, TownScreen.class);
         startActivity(intent2);
     }
 
     public void backToChar(View v){
+        int [] nullify = {0,0,0,0,0,0,0,0,0,0,0,0,0};
+        config.skillLevels = nullify;
         Intent intent1 = new Intent(this, CreateCharacter.class);
         startActivity(intent1);
+    }
+
+    public void writeCharToFile(){
+        String textmsg = "test";
+        try {
+            FileOutputStream fileout=openFileOutput("mytextfile.txt", MODE_PRIVATE);
+            OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
+            //outputWriter.write(textmsg.getText().toString());
+            outputWriter.write(textmsg);
+            outputWriter.close();
+            //display file saved message
+            Toast.makeText(getBaseContext(), "File saved successfully!",
+                    Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
