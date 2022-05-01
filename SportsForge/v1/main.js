@@ -30,7 +30,9 @@ function Main() {
                 <input type="text" placeholder="Enter password" onChange={event => this.handlePasswordChange(event)}></input>
             </p>
             <p>
-                <button onClick={()=>this.handleLogIn}>Login</button>    
+                <Link to={"/home"}>
+                    <button>Login</button>    
+                </Link>
             </p>
             <p>
                 <Link to={"/create"}>

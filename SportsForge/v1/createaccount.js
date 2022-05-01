@@ -42,7 +42,7 @@ function CreateAccount() {
             </p>
             <p>
                 <Link to={"/"}>
-                    <button>Home</button>
+                    <button>Back</button>
                 </Link>    
             </p>
         </div>
