@@ -2,13 +2,13 @@ import './App.css';
 
 import NavBar from "./navbar"
 
-function Home() {
+function Games() {
   return (
     <div>
       <NavBar />
-      <p>Home</p>
+      <p>Games</p>
     </div>
   );
 }
 
-export default Home;
+export default Games;

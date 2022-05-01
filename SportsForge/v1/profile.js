@@ -2,13 +2,13 @@ import './App.css';
 
 import NavBar from "./navbar"
 
-function Home() {
+function Profile() {
   return (
     <div>
       <NavBar />
-      <p>Home</p>
+      <p>Profile</p>
     </div>
   );
 }
 
-export default Home;
+export default Profile;
