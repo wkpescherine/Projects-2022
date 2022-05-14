@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom'
 function CreateAccount() {
     React.state = {
         username:"none",
-        password:"none"
+        password:"none",
+        email:"none"
     }
     
     React.handleUsernameChange = event => {
@@ -21,19 +22,26 @@ function CreateAccount() {
           })
     }
 
-    React.handleLogIn =() =>{
-        console.log("Logged In")
+    React.handleEmailChange = event => {
+        this.setState({
+            email: event.target.value
+        })
     }
+
     
     return (
         <div>
-            <p>Username</p>
-            <p>
+            <p> 
+                Username -  
                 <input type="text" placeholder="Enter username" onChange={event => this.handleUsernameChange(event)}></input>
             </p>
-            <p>Password</p>
             <p>
+                Password -
                 <input type="text" placeholder="Enter password" onChange={event => this.handlePasswordChange(event)}></input>
+            </p>
+            <p>
+                Email -
+                <input type="text" placeholder="Enter password" onChange={event => this.handleEmailChange(event)}></input>
             </p>
             <p>
                 <Link to={"/home"}>

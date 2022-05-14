@@ -7,6 +7,7 @@ import Home from "./home"
 import Leagues from "./leagues"
 import Games from "./games"
 import Profile from "./profile"
+import Bank from "./bank"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/leagues" element={<Leagues />}/>
             <Route exact path="/games" element={<Games />}/>
             <Route exact path="/profile" element={<Profile />}/>
+            <Route exact path="/bank" element={<Bank />}/>
           </Routes>
       </div>
     </Router>

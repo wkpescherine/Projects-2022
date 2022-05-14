@@ -2,6 +2,10 @@ p, h1, h2, h5 {
   color: #fff;
 }
 
+h3{
+  color:#000;
+}
+
 body {
   background-color: #000;
 }
