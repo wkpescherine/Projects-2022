@@ -1,4 +1,5 @@
 051622 SportsForge - Added basic layout for players current games
+                     Started to handle the create account functionality
 051522 SportsForge - Changed routes to a near SPA compressed into a single dashboard panel
                      Built out League chocies and displaying of open tournamnets
 051422 SportsForge - Updated to v2.1 as we modify pages flow and logic
