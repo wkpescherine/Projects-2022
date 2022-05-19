@@ -1,4 +1,5 @@
-050722 SportsForge = Working on event handling and logic for account creation
+051822 SportsForge = Continueing to work on login logic
+051722 SportsForge = Working on event handling and logic for account creation
 051622 SportsForge - Added basic layout for players current games
                      Started to handle the create account functionality
 051522 SportsForge - Changed routes to a near SPA compressed into a single dashboard panel
