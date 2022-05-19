@@ -1,3 +1,5 @@
+051922 SportsForge = Able to Create New accounts
+                     Working on building logic to make sure no duplicates
 051822 SportsForge = Continueing to work on login logic
                      Basiclog is working with minor issue on accuracy
 051722 SportsForge = Working on event handling and logic for account creation
