@@ -2,7 +2,8 @@
        SportsForge - Might be moving to a Mongo DB, Node back end in process of updating this part
        SportsForge(POD) - Created SF Player Ops Dashboard
        SportsForge(POD) - Created League Handlers and basic logic handling
-       SportsForge(POD) - Created Teams Listing for NFL and NBA with basic logic handling       
+       SportsForge(POD) - Created Teams Listing for NFL and NBA with basic logic handling 
+       SportsForge(POD) - Created Ops Manager to handle games, torunaments and ops items.
 080622 No Updates
 080522 No Updates
 080422 No Updates
