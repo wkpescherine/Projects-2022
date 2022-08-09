@@ -1,3 +1,5 @@
+080722 SportsForge(POD) - Adding player section and stats managemnet
+       SportsForge(POD) - Set up NFL and NBA player manager as well as basic logic
 080722 SportsForge - Updated version 5.0
        SportsForge - Might be moving to a Mongo DB, Node back end in process of updating this part
        SportsForge(POD) - Created SF Player Ops Dashboard
