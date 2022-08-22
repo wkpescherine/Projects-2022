@@ -1,0 +1,32 @@
+##This will not work
+##class Review:
+##    x = 167
+##    name = Python
+##review = Review()
+##print(review.x)
+##print(review.name)
+
+class Review2:
+    def __init__(self,x,name):
+        self.x = x
+        self.name = name
+
+review2 = Review2(16, "Python")
+print(review2.x)
+print(review2.name)
+
+def someFunction(arg):
+    ##Any args can be passed inas the folowing example
+        ## somefunction(someThing)
+            ##can also do it as a tuple if do not know how many values with be passed into it
+                ##someFunction(*something)
+    ##Can also pass with key = values pairing
+        ##someFunction(arg1, arg2)
+            ##someFunction(arg1 = 1, arg2 = 2)
+    ##This is used if the function is emoty as there can be no empoty functions
+        ##pass
+    ##Can set a value in case no value is passed in
+        ##someFunction(something = 3)
+    print(arg)
+
+someFunction("What I entered here")
