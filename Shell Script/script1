@@ -1,7 +1,0 @@
-#!/bin/bash
-
-sudo mkdir test
-
-echo This is just a test
-
-exit
