@@ -13,3 +13,12 @@ chmod u+x {filename}
 --------------------------------------------------------
 
 cp {main filename} {renaming of the main file}
+
+--------------------------------------------------------
+
+I can run python code right from the command line
+with the following code snippet
+
+python filename.py
+
+This should also be able to workf rom inside a shell script
