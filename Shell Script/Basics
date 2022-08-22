@@ -7,6 +7,9 @@ Step 5 type :wq (write file and exit vim)
 --------------------------------------------------------
 
 script has to have a .sh extension
-then do chmod -x {filename}
-if I get a permission erro do the following
+THIS IS REQUIRED FOR SCRIPT TO RUN
 chmod u+x {filename}
+
+--------------------------------------------------------
+
+cp {main filename} {renaming of the main file}
