@@ -1,0 +1,41 @@
+name = "Freddy"
+
+print(name)
+
+num = 3
+
+print(num)
+
+answer = input("Enter something here: ")
+
+try:
+    if int(answer) >= 0:
+        print(answer)
+except:
+    print("No idea what you entered")
+
+someList = ["One", "Two", "Three", "Four"]
+
+print(someList)
+print(someList[2])
+
+for x in someList:
+    print(x)
+
+[print(x) for x in someList]
+
+x = 0
+while x < len(someList):
+    print(someList[x])
+    x = x+1
+
+someDict = {
+    "name": "SomeName",
+    "age": 1,
+    "values":[34, 21,190, 8902]
+}
+
+print(someDict)
+print("This is whats inside the dict:" + someDict["name"])
+getValues = someDict["values"]
+print("Numberwithin the dict and key value with index 2 :" + str(getValues[2]))
