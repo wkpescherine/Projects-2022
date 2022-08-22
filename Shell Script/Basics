@@ -1,0 +1,5 @@
+Step 1 type vim filename (create a file named filename)
+Step 2 type i ( switch to insert mode)
+Step 3 enter text (enter your Ada program)
+Step 4 hit Esc key (switch back to command mode)
+Step 5 type :wq (write file and exit vim)
