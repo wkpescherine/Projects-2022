@@ -3,3 +3,10 @@ Step 2 type i ( switch to insert mode)
 Step 3 enter text (enter your Ada program)
 Step 4 hit Esc key (switch back to command mode)
 Step 5 type :wq (write file and exit vim)
+
+--------------------------------------------------------
+
+script has to have a .sh extension
+then do chmod -x {filename}
+if I get a permission erro do the following
+chmod u+x {filename}
