@@ -22,3 +22,21 @@ with the following code snippet
 python filename.py
 
 This should also be able to workf rom inside a shell script
+
+--------------------------------------------------------
+
+Moving a file
+
+mv ~/Desktop/foldername/filename ~/Desktop/foldername/filename
+
+In doing this the foldername could be multiple of this depending
+On how deep it is or how deep it is being placed.
+
+can also use this as a way to rename files by moving it to itself
+
+mv ~/Desktop/foldername/filename ~/Desktop/foldername/filename2
+
+In this case fodler name would stay same and could be many but the same,
+Would just be changing the filename
+
+Can change the file name also at anytime when doing the more if wanted to.
